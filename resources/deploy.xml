@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03"
+	xmlns:bpel="urn:westbank:bpel:LoanApproval:2009:11"
+	xmlns:ws="urn:westbank:ws:process:LoanApproval:2009:11"
+	xmlns:bankinformation="urn:westbank:ws:business:BankInformation:2009:11"
+	xmlns:bankprivilege="urn:westbank:ws:business:BankPrivilege:2009:11"
+	xmlns:creditworthiness="urn:westbank:ws:business:CreditWorthiness:2009:11"
+	xmlns:loanapprovalclosing="urn:westbank:ws:business:LoanApprovalClosing:2009:11"
+	xmlns:loanfile="urn:westbank:ws:business:LoanFile:2009:11"
+	xmlns:loancontract="urn:westbank:ws:business:LoanContract:2009:11"
+	xmlns:loanrisk="urn:westbank:ws:business:LoanRisk:2009:11"
+	xmlns:loansettlement="urn:westbank:ws:business:LoanSettlement:2009:11"
+	xmlns:dispatch="urn:westbank:ws:business:TaskDispatch:2009:11"
+	xmlns:callbackloanapproval="urn:westbank:ws:client:CallbackLoanApproval"
+	xmlns:callbackloancontract="urn:westbank:ws:client:CallbackLoanContract"
+	xmlns:testmock="urn:westbank:ws:TestMock">
+
+	<process name="bpel:LoanApproval">
+		<active>true</active>
+		<in-memory>false</in-memory>
+		<process-events generate="all" />
+		<provide partnerLink="LoanApproval">
+			<service name="ws:LoanApproval" port="LoanApprovalPort" />
+		</provide>
+		<invoke partnerLink="BankPrivilege">
+			<service name="bankprivilege:BankPrivilege"
+				port="BankPrivilegePort" />
+		</invoke>
+		<invoke partnerLink="BankInformation">
+			<service name="bankinformation:BankInformation"
+				port="BankInformationPort" />
+		</invoke>
+		<invoke partnerLink="LoanFile">
+			<service name="loanfile:LoanFile" port="LoanFilePort" />
+		</invoke>
+		<invoke partnerLink="TaskDispatch">
+			<service name="dispatch:TaskDispatch" port="TaskDispatchPort" />
+		</invoke>
+		<invoke partnerLink="CreditWorthiness">
+			<service name="creditworthiness:CreditWorthiness"
+				port="CreditWorthinessPort" />
+		</invoke>
+		<invoke partnerLink="LoanContract">
+			<service name="loancontract:LoanContract"
+				port="LoanContractPort" />
+		</invoke>
+		<invoke partnerLink="LoanRisk">
+			<service name="loanrisk:LoanRisk" port="LoanRiskPort" />
+		</invoke>
+		<invoke partnerLink="LoanSettlement">
+			<service name="loansettlement:LoanSettlement"
+				port="LoanSettlementPort" />
+		</invoke>
+		<invoke partnerLink="LoanApprovalClosing">
+			<service name="loanapprovalclosing:LoanApprovalClosing"
+				port="LoanApprovalClosingPort" />
+		</invoke>
+		<invoke partnerLink="CallbackLoanApproval">
+			<service name="callbackloanapproval:CallbackLoanApproval"
+				port="CallbackLoanApprovalPort" />
+		</invoke>
+		<invoke partnerLink="CallbackLoanContract">
+			<service name="callbackloancontract:CallbackLoanContract"
+				port="CallbackLoanContractPort" />
+		</invoke>
+		<invoke partnerLink="TestMock">
+			<service name="testmock:TestMock" port="TestMockPort" />
+		</invoke>
+
+	</process>
+
+</deploy>

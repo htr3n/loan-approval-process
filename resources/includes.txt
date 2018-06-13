@@ -1,0 +1,15 @@
+BankInformation.wsdl
+BankPrivilege.wsdl
+CallbackLoanApproval.wsdl
+CallbackLoanContract.wsdl
+CreditWorthiness.wsdl
+deploy.xml
+LoanApproval.bpel
+LoanApproval.wsdl
+LoanApprovalClosing.wsdl
+LoanContract.wsdl
+LoanFile.wsdl
+LoanRisk.wsdl
+LoanSettlement.wsdl
+TaskDispatch.wsdl
+TestMock.wsdl

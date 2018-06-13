@@ -1,0 +1,65 @@
+<project name="LoanApproval" basedir="." default="usage">
+
+	<property file="project.properties" />
+	<property name="packagefile" value="${basedir}/${ant.project.name}.zip" />
+
+
+	<macrodef name="bpelc">
+		<attribute name="bpel" />
+		<sequential>
+			<java classname="org.apache.ode.tools.bpelc.cline.BpelC" fork="true">
+				<arg value="@{bpel}" />
+				<sysproperty key="log4j.configurationFile" value="file:src/log4j2.xml" />
+				<sysproperty key="log4j2.debug" value="true" />
+				<classpath>
+					<fileset dir="lib">
+						<include name="*.jar" />
+					</fileset>
+				</classpath>
+			</java>
+		</sequential>
+	</macrodef>
+
+	<target name="usage">
+		<echo message="Usage:" />
+		<echo message=" ant process.compile   -- compile Loan Approval Process" />
+		<echo message=" ant process.deploy    -- deploy Loan Approval Process to Apache ODE" />
+		<echo message=" ant process.undeploy  -- undeploy Loan Approval Process" />
+		<echo message=" ant clean             -- clean up" />
+	</target>
+
+	<target name="process.deploy" depends="process.undeploy">
+		<mkdir dir="${ode.deploy.dir}/${ant.project.name}" />
+		<copy todir="${ode.deploy.dir}/${ant.project.name}" verbose="false">
+			<fileset dir="${resources.dir}">
+				<includesfile name="${resources.dir}/includes.txt" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="process.undeploy">
+		<delete dir="${ode.deploy.dir}/${ant.project.name}" failonerror="no" />
+		<delete file="${ode.deploy.dir}/${ant.project.name}.deployed" failonerror="no" />
+	</target>
+
+	<target name="process.compile">
+		<bpelc bpel="${resources.dir}/LoanApproval.bpel" />
+	</target>
+
+	<target name="process.package">
+		<zip destfile="${packagefile}">
+			<fileset dir="${resources.dir}">
+				<includesfile name="${resources.dir}/includes.txt" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="clean">
+		<delete dir="${basedir}/bin" failonerror="no" />
+		<delete file="${packagefile}" failonerror="no" />
+		<delete failonerror="no">
+			<fileset dir="${basedir}" includes="**/*.log"/>
+		</delete>
+	</target>
+
+</project>
