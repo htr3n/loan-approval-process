@@ -5,46 +5,30 @@
   xmlns:ws="http://schemas.xmlsoap.org/wsdl/"
   xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" 
   xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+  xmlns:tns="urn:com:westbank:ws:process:LoanApproval:2018:06"
+  targetNamespace="urn:com:westbank:ws:process:LoanApproval:2018:06"
 
-  xmlns:tns="urn:westbank:ws:process:LoanApproval:2009:11"
-  targetNamespace="urn:westbank:ws:process:LoanApproval:2009:11"
-
-  xmlns:bankinformation="urn:westbank:ws:business:BankInformation:2009:11"
-  xmlns:bankprivilege="urn:westbank:ws:business:BankPrivilege:2009:11"
-  xmlns:callbackloanapproval="urn:westbank:ws:client:CallbackLoanApproval"
-  xmlns:callbackloancontract="urn:westbank:ws:client:CallbackLoanContract"
-  xmlns:creditworthiness="urn:westbank:ws:business:CreditWorthiness:2009:11"
-  xmlns:loanapprovalclosing="urn:westbank:ws:business:LoanApprovalClosing:2009:11"
-  xmlns:loansettlement="urn:westbank:ws:business:LoanSettlement:2009:11"
-  xmlns:loanfile="urn:westbank:ws:business:LoanFile:2009:11"
-  xmlns:loanrisk="urn:westbank:ws:business:LoanRisk:2009:11"
-  xmlns:loancontract="urn:westbank:ws:business:LoanContract:2009:11"
-  xmlns:taskdispatch="urn:westbank:ws:business:TaskDispatch:2009:11"
-  xmlns:testmock="urn:westbank:ws:TestMock"
+  xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2018:06"
+  xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2018:06"
+  xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
+  xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract"
+  xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
+  xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
+  xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2018:06"
+  xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2018:06"
+  xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2018:06"
+  xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2018:06"
+  xmlns:taskdispatch="urn:com:westbank:ws:business:TaskDispatch:2018:06"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/plnktype 
       http://docs.oasis-open.org/wsbpel/2.0/OS/plnktype/ws-bpel_plnktype.xsd
       http://docs.oasis-open.org/wsbpel/2.0/varprop
       http://docs.oasis-open.org/wsbpel/2.0/OS/varprop/ws-bpel_varprop.xsd">
-  <!-- 
-  <ws:import namespace="urn:westbank:ws:client:CallbackLoanApproval" location="CallbackLoanApproval.wsdl" />
-  <ws:import namespace="urn:westbank:ws:client:CallbackLoanContract" location="CallbackLoanContract.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:BankInformation:2009:11" location="BankInformation.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:BankPrivilege:2009:11" location="BankPrivilege.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:CreditWorthiness:2009:11" location="CreditWorthiness.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:LoanApprovalClosing:2009:11" location="LoanApprovalClosing.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:LoanSettlement:2009:11" location="LoanSettlement.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:LoanFile:2009:11" location="LoanFile.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:LoanRisk:2009:11" location="LoanRisk.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:LoanContract:2009:11" location="LoanContract.wsdl" />
-  <ws:import namespace="urn:westbank:ws:business:TaskDispatch:2009:11" location="TaskDispatch.wsdl" />
-  <ws:import namespace="urn:westbank:ws:TestMock" location="TestMock.wsdl" />
-   -->
-   
+
   <ws:types>
     <xsd:schema
-      targetNamespace="urn:westbank:ws:process:LoanApproval:2009:11"
-      xmlns="urn:westbank:ws:process:LoanApproval:2009:11"
+      targetNamespace="urn:com:westbank:ws:process:LoanApproval:2018:06"
+      xmlns="urn:com:westbank:ws:process:LoanApproval:2018:06"
       elementFormDefault="qualified">
 
       <xsd:element name="LoanApprovalRequest">
@@ -88,6 +72,7 @@
             <xsd:element name="settlementDate" type="xsd:date" />
             <xsd:element name="totalPurchasePrice" type="xsd:double" />
             <xsd:element name="personalCapitalContribution" type="xsd:double" />
+            
             <xsd:element name="accessSensitiveData" type="xsd:boolean"  default="false" />
           </xsd:sequence>
         </xsd:complexType>
@@ -159,6 +144,7 @@
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
+
     </xsd:schema>
   </ws:types>
 
@@ -242,81 +228,7 @@
       <soap:address location="http://localhost:8080/ode/processes/LoanApproval" />
     </ws:port>
   </ws:service>
-
-  <plnk:partnerLinkType name="LoanApproval">
-      <plnk:role name="LoanApproval" portType="tns:LoanApproval"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="BankInformation">
-      <plnk:role name="BankInformation" portType="bankinformation:BankInformation"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="BankPrivilege">
-      <plnk:role name="BankPrivilege" portType="bankprivilege:BankPrivilege"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="CreditWorthiness">
-      <plnk:role name="CreditWorthiness" portType="creditworthiness:CreditWorthiness"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="LoanApprovalClosing">
-      <plnk:role name="LoanApprovalClosing" portType="loanapprovalclosing:LoanApprovalClosing"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="LoanSettlement">
-      <plnk:role name="LoanSettlement" portType="loansettlement:LoanSettlement"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="LoanFile">
-      <plnk:role name="LoanFile" portType="loanfile:LoanFile"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="LoanRisk">
-      <plnk:role name="LoanRisk" portType="loanrisk:LoanRisk"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="LoanContract">
-      <plnk:role name="LoanContract" portType="loancontract:LoanContract"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="TaskDispatch">
-      <plnk:role name="TaskDispatch" portType="taskdispatch:TaskDispatch"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="CallbackLoanApproval">
-      <plnk:role name="CallbackLoanApproval" portType="callbackloanapproval:CallbackLoanApproval"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="CallbackLoanContract">
-      <plnk:role name="CallbackLoanContract" portType="callbackloancontract:CallbackLoanContract"/>
-  </plnk:partnerLinkType>
-
-  <plnk:partnerLinkType name="TestMock">
-      <plnk:role name="TestMock" portType="testmock:TestMock"/>
-  </plnk:partnerLinkType>
-
-  <vprop:property name="loanFileId" type="xsd:string"/>
-  
-  <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:LoanApprovalRequest" part="request" >
-    <vprop:query>/message/request/tns:LoanApprovalRequest/tns:loanFileId</vprop:query>
-  </vprop:propertyAlias>
-
-  <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:CustomerDecision" part="request" >
-    <vprop:query>/message/request/tns:CustomerDecision/tns:loanFileId</vprop:query>
-  </vprop:propertyAlias>
-
-  <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:ManagerDecision" part="request" >
-    <vprop:query>/message/request/tns:ManagerDecision/tns:loanFileId</vprop:query>
-  </vprop:propertyAlias>
-
-  <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:ManagerSignature" part="request" >
-    <vprop:query>/message/request/tns:ManagerSignature/tns:loanFileId</vprop:query>
-  </vprop:propertyAlias>
-
-  <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:StaffIdentity" part="request" >
-    <vprop:query>/message/request/tns:StaffIdentity/tns:loanFileId</vprop:query>
-  </vprop:propertyAlias>
-
+     
 </ws:definitions>
 
 

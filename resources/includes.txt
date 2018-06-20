@@ -12,4 +12,3 @@ LoanFile.wsdl
 LoanRisk.wsdl
 LoanSettlement.wsdl
 TaskDispatch.wsdl
-TestMock.wsdl

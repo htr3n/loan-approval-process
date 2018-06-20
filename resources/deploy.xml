@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03"
-	xmlns:bpel="urn:westbank:bpel:LoanApproval:2009:11"
-	xmlns:ws="urn:westbank:ws:process:LoanApproval:2009:11"
-	xmlns:bankinformation="urn:westbank:ws:business:BankInformation:2009:11"
-	xmlns:bankprivilege="urn:westbank:ws:business:BankPrivilege:2009:11"
-	xmlns:creditworthiness="urn:westbank:ws:business:CreditWorthiness:2009:11"
-	xmlns:loanapprovalclosing="urn:westbank:ws:business:LoanApprovalClosing:2009:11"
-	xmlns:loanfile="urn:westbank:ws:business:LoanFile:2009:11"
-	xmlns:loancontract="urn:westbank:ws:business:LoanContract:2009:11"
-	xmlns:loanrisk="urn:westbank:ws:business:LoanRisk:2009:11"
-	xmlns:loansettlement="urn:westbank:ws:business:LoanSettlement:2009:11"
-	xmlns:dispatch="urn:westbank:ws:business:TaskDispatch:2009:11"
-	xmlns:callbackloanapproval="urn:westbank:ws:client:CallbackLoanApproval"
-	xmlns:callbackloancontract="urn:westbank:ws:client:CallbackLoanContract"
-	xmlns:testmock="urn:westbank:ws:TestMock">
+	xmlns:bpel="urn:com:westbank:bpel:LoanApproval:2018:06"
+	xmlns:ws="urn:com:westbank:ws:process:LoanApproval:2018:06"
+	xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2018:06"
+	xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2018:06"
+	xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
+	xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
+	xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2018:06"
+	xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2018:06"
+	xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2018:06"
+	xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2018:06"
+	xmlns:dispatch="urn:com:westbank:ws:business:TaskDispatch:2018:06"
+	xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
+	xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
 
 	<process name="bpel:LoanApproval">
 		<active>true</active>
@@ -62,9 +61,6 @@
 		<invoke partnerLink="CallbackLoanContract">
 			<service name="callbackloancontract:CallbackLoanContract"
 				port="CallbackLoanContractPort" />
-		</invoke>
-		<invoke partnerLink="TestMock">
-			<service name="testmock:TestMock" port="TestMockPort" />
 		</invoke>
 
 	</process>

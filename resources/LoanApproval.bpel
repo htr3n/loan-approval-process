@@ -6,77 +6,70 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:bp="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/process/executable http://docs.oasis-open.org/wsbpel/2.0/OS/process/executable/ws-bpel_executable.xsd"
-  targetNamespace="urn:westbank:bpel:LoanApproval:2009:11"
-  xmlns:loanapproval="urn:westbank:ws:process:LoanApproval:2009:11"
-  xmlns:bankinformation="urn:westbank:ws:business:BankInformation:2009:11"
-  xmlns:loanfile="urn:westbank:ws:business:LoanFile:2009:11"
-  xmlns:bankprivilege="urn:westbank:ws:business:BankPrivilege:2009:11"
-  xmlns:taskdispatch="urn:westbank:ws:business:TaskDispatch:2009:11"
-  xmlns:creditworthiness="urn:westbank:ws:business:CreditWorthiness:2009:11"
-  xmlns:loanrisk="urn:westbank:ws:business:LoanRisk:2009:11"
-  xmlns:loancontract="urn:westbank:ws:business:LoanContract:2009:11"
-  xmlns:loansettlement="urn:westbank:ws:business:LoanSettlement:2009:11"
-  xmlns:loanapprovalclosing="urn:westbank:ws:business:LoanApprovalClosing:2009:11"
-  xmlns:callbackloanapproval="urn:westbank:ws:client:CallbackLoanApproval"
-  xmlns:callbackloancontract="urn:westbank:ws:client:CallbackLoanContract"
-  xmlns:testmock="urn:westbank:ws:TestMock">
+  xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/process/executable 
+  http://docs.oasis-open.org/wsbpel/2.0/OS/process/executable/ws-bpel_executable.xsd"
+  
+  targetNamespace="urn:com:westbank:bpel:LoanApproval:2018:06"
+  xmlns:loanapproval="urn:com:westbank:ws:process:LoanApproval:2018:06"
+  xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2018:06"
+  xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2018:06"
+  xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2018:06"
+  xmlns:taskdispatch="urn:com:westbank:ws:business:TaskDispatch:2018:06"
+  xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
+  xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2018:06"
+  xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2018:06"
+  xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2018:06"
+  xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
+  xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
+  xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
 
   <bp:import
-    namespace="urn:westbank:ws:process:LoanApproval:2009:11"
+    namespace="urn:com:westbank:ws:process:LoanApproval:2018:06"
     location="LoanApproval.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:TestMock"
-    location="TestMock.wsdl"
-    importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import
-    namespace="urn:westbank:ws:business:TaskDispatch:2009:11"
+    namespace="urn:com:westbank:ws:business:TaskDispatch:2018:06"
     location="TaskDispatch.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:LoanSettlement:2009:11"
+    namespace="urn:com:westbank:ws:business:LoanSettlement:2018:06"
     location="LoanSettlement.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:LoanRisk:2009:11"
+    namespace="urn:com:westbank:ws:business:LoanRisk:2018:06"
     location="LoanRisk.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:LoanFile:2009:11"
+    namespace="urn:com:westbank:ws:business:LoanFile:2018:06"
     location="LoanFile.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:LoanContract:2009:11"
+    namespace="urn:com:westbank:ws:business:LoanContract:2018:06"
     location="LoanContract.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:LoanApprovalClosing:2009:11"
+    namespace="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
     location="LoanApprovalClosing.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:CreditWorthiness:2009:11"
+    namespace="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
     location="CreditWorthiness.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:BankPrivilege:2009:11"
+    namespace="urn:com:westbank:ws:business:BankPrivilege:2018:06"
     location="BankPrivilege.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:business:BankInformation:2009:11"
+    namespace="urn:com:westbank:ws:business:BankInformation:2018:06"
     location="BankInformation.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:client:CallbackLoanContract"
+    namespace="urn:com:westbank:ws:client:CallbackLoanContract"
     location="CallbackLoanContract.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:westbank:ws:client:CallbackLoanApproval"
+    namespace="urn:com:westbank:ws:client:CallbackLoanApproval"
     location="CallbackLoanApproval.wsdl"
-    importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import
-    namespace="urn:westbank:ws:TestMock"
-    location="TestMock.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
 
   <bp:partnerLinks>
@@ -128,10 +121,6 @@
       name="CallbackLoanApproval"
       partnerLinkType="loanapproval:CallbackLoanApproval"
       partnerRole="CallbackLoanApproval" />
-    <bp:partnerLink
-      name="TestMock"
-      partnerLinkType="loanapproval:TestMock"
-      partnerRole="TestMock" />
   </bp:partnerLinks>
 
   <bp:variables>
@@ -210,9 +199,6 @@
     <bp:variable
       name="callbackLoanApprovalInput"
       messageType="callbackloanapproval:CallbackLoanApprovalRequest" />
-    <bp:variable
-      name="testMockInput"
-      messageType="testmock:TestRequest" />
   </bp:variables>
 
   <bp:correlationSets>
@@ -244,7 +230,7 @@
         <bp:from>
           <bp:literal>
             <p:CallbackLoanApprovalRequest
-              xmlns:p="urn:westbank:ws:client:CallbackLoanApproval">
+              xmlns:p="urn:com:westbank:ws:client:CallbackLoanApproval">
               <p:borrowerCustomerId><![CDATA[-1]]></p:borrowerCustomerId>
               <p:contractId />
               <p:loanFileId />
@@ -279,7 +265,7 @@
         <bp:from>
           <bp:literal>
             <p:LoanFileRequest
-              xmlns:p="urn:westbank:ws:business:LoanFile:2009:11">
+              xmlns:p="urn:com:westbank:ws:business:LoanFile:2018:06">
               <p:borrowerCustomerId><![CDATA[0]]></p:borrowerCustomerId>
               <p:borrowerTitle />
               <p:borrowerFirstName />
@@ -613,7 +599,7 @@
         <bp:from>
           <bp:literal>
             <p:BankPrivilegeRequest
-              xmlns:p="urn:westbank:ws:business:BankPrivilege:2009:11">
+              xmlns:p="urn:com:westbank:ws:business:BankPrivilege:2018:06">
               <p:borrowerCustomerId />
               <p:borrowerFirstName />
               <p:borrowerLastName />
@@ -690,7 +676,7 @@
             <bp:from>
               <bp:literal>
                 <p:BankInformationRequest
-                  xmlns:p="urn:westbank:ws:business:BankInformation:2009:11">
+                  xmlns:p="urn:com:westbank:ws:business:BankInformation:2018:06">
                   <p:loanAmount><![CDATA[0]]></p:loanAmount>
                   <p:loanTerm><![CDATA[0]]></p:loanTerm>
                   <p:interestRate><![CDATA[0]]></p:interestRate>
@@ -760,7 +746,7 @@
                 <bp:from>
                   <bp:literal>
                     <p:TaskDispatchRequest
-                      xmlns:p="urn:westbank:ws:business:TaskDispatch:2009:11">
+                      xmlns:p="urn:com:westbank:ws:business:TaskDispatch:2018:06">
                       <p:loanAmount><![CDATA[0]]></p:loanAmount>
                       <p:staffId />
                       <p:staffRole />
@@ -830,7 +816,7 @@
                     <bp:from>
                       <bp:literal>
                         <p:CreditWorthinessRequest
-                          xmlns:p="urn:westbank:ws:business:CreditWorthiness:2009:11">
+                          xmlns:p="urn:com:westbank:ws:business:CreditWorthiness:2018:06">
                           <p:loanFileId />
                           <p:numberOfIncidents><![CDATA[0]]></p:numberOfIncidents>
                           <p:numberOfBanks><![CDATA[0]]></p:numberOfBanks>
@@ -900,7 +886,7 @@
                         <bp:from>
                           <bp:literal>
                             <p:LoanRiskRequest
-                              xmlns:p="urn:westbank:ws:business:LoanRisk:2009:11">
+                              xmlns:p="urn:com:westbank:ws:business:LoanRisk:2018:06">
                               <p:loanFileId />
                               <p:staffId />
                               <p:staffRole />
@@ -982,7 +968,7 @@
                             <bp:from>
                               <bp:literal>
                                 <p:LoanContractRequest
-                                  xmlns:p="urn:westbank:ws:business:LoanContract:2009:11"
+                                  xmlns:p="urn:com:westbank:ws:business:LoanContract:2018:06"
                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                                   <p:loanFileId />
                                   <p:monthlyPayment><![CDATA[0]]></p:monthlyPayment>
@@ -1055,7 +1041,7 @@
                             <bp:from>
                               <bp:literal>
                                 <p:CallbackLoanContractRequest
-                                  xmlns:p="urn:westbank:ws:client:CallbackLoanContract">
+                                  xmlns:p="urn:com:westbank:ws:client:CallbackLoanContract">
                                   <p:borrowerCustomerId />
                                   <p:loanContractId />
                                 </p:CallbackLoanContractRequest>
@@ -1123,7 +1109,7 @@
                                       <bp:from>
                                         <bp:literal>
                                           <p:LoanSettlementRequest
-                                            xmlns:p="urn:westbank:ws:business:LoanSettlement:2009:11">
+                                            xmlns:p="urn:com:westbank:ws:business:LoanSettlement:2018:06">
                                             <p:loanFileId />
                                             <p:loanContractId />
                                             <p:staffId />
@@ -1242,7 +1228,7 @@
                                   <bp:from>
                                     <bp:literal>
                                       <p:LoanApprovalClosingRequest
-                                        xmlns:p="urn:westbank:ws:business:LoanApprovalClosing:2009:11">
+                                        xmlns:p="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06">
                                         <p:loanFileId />
                                         <p:loanContractId />
                                         <p:staffId />
