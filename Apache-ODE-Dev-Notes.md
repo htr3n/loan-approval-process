@@ -71,12 +71,12 @@
 
    b) Add an `<invoke>` element, specify the `partnerLink` attribute which is identical to that in step 2(c).
 
-4. ```xml
+```xml
   <invoke partnerLink="non-qualified-partnerLink-name">
   ...
   </invoke>
-  ```
-  c) Add a `<service>` element which is sub-element of the `<invoke>` in 3(b), specify precisely the service and port names:
+```
+  c) Add a `<service>` element as sub-element of the `<invoke>` defined in 3(b), and specify precisely the service and port names:
 
   ```xml
     <invoke partnerLink="non-qualified-partnerLink-name">
