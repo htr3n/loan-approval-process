@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03"
-	xmlns:bpel="urn:com:westbank:bpel:LoanApproval:2018:06"
-	xmlns:ws="urn:com:westbank:ws:process:LoanApproval:2018:06"
-	xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2018:06"
-	xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2018:06"
-	xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
-	xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
-	xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2018:06"
-	xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2018:06"
-	xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2018:06"
-	xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2018:06"
-	xmlns:dispatch="urn:com:westbank:ws:business:TaskDispatch:2018:06"
-	xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
-	xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
+	 xmlns:bpel="urn:com:westbank:bpel:LoanApproval:2019:01"
+   xmlns:ws="urn:com:westbank:ws:process:LoanApproval:2019:01"
+   xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2019:01"
+   xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2019:01"
+   xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2019:01"
+   xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01"
+   xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2019:01"
+   xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2019:01"
+   xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2019:01"
+   xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2019:01"
+   xmlns:dispatch="urn:com:westbank:ws:business:TaskDispatch:2019:01"
+   xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
+   xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
 
 	<process name="bpel:LoanApproval">
 		<active>true</active>
@@ -22,12 +22,10 @@
 			<service name="ws:LoanApproval" port="LoanApprovalPort" />
 		</provide>
 		<invoke partnerLink="BankPrivilege">
-			<service name="bankprivilege:BankPrivilege"
-				port="BankPrivilegePort" />
+			<service name="bankprivilege:BankPrivilege" port="BankPrivilegePort" />
 		</invoke>
 		<invoke partnerLink="BankInformation">
-			<service name="bankinformation:BankInformation"
-				port="BankInformationPort" />
+			<service name="bankinformation:BankInformation" port="BankInformationPort" />
 		</invoke>
 		<invoke partnerLink="LoanFile">
 			<service name="loanfile:LoanFile" port="LoanFilePort" />
@@ -36,33 +34,25 @@
 			<service name="dispatch:TaskDispatch" port="TaskDispatchPort" />
 		</invoke>
 		<invoke partnerLink="CreditWorthiness">
-			<service name="creditworthiness:CreditWorthiness"
-				port="CreditWorthinessPort" />
+			<service name="creditworthiness:CreditWorthiness" port="CreditWorthinessPort" />
 		</invoke>
 		<invoke partnerLink="LoanContract">
-			<service name="loancontract:LoanContract"
-				port="LoanContractPort" />
+			<service name="loancontract:LoanContract" port="LoanContractPort" />
 		</invoke>
 		<invoke partnerLink="LoanRisk">
 			<service name="loanrisk:LoanRisk" port="LoanRiskPort" />
 		</invoke>
 		<invoke partnerLink="LoanSettlement">
-			<service name="loansettlement:LoanSettlement"
-				port="LoanSettlementPort" />
+			<service name="loansettlement:LoanSettlement" port="LoanSettlementPort" />
 		</invoke>
-		<invoke partnerLink="LoanApprovalClosing">
-			<service name="loanapprovalclosing:LoanApprovalClosing"
-				port="LoanApprovalClosingPort" />
-		</invoke>
-		<invoke partnerLink="CallbackLoanApproval">
-			<service name="callbackloanapproval:CallbackLoanApproval"
-				port="CallbackLoanApprovalPort" />
-		</invoke>
-		<invoke partnerLink="CallbackLoanContract">
-			<service name="callbackloancontract:CallbackLoanContract"
-				port="CallbackLoanContractPort" />
-		</invoke>
-
+    <invoke partnerLink="LoanApprovalClosing">
+      <service name="loanapprovalclosing:LoanApprovalClosing" port="LoanApprovalClosingPort" />
+    </invoke>
+    <invoke partnerLink="CallbackLoanApproval">
+      <service name="callbackloanapproval:CallbackLoanApproval" port="CallbackLoanApprovalPort" />
+    </invoke>
+    <invoke partnerLink="CallbackLoanContract">
+      <service name="callbackloancontract:CallbackLoanContract" port="CallbackLoanContractPort" />
+    </invoke>
 	</process>
-
 </deploy>

@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="ASCII"?>
+<extensionmodel:ExtensionMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:extensionmodel="http:///extensionmodel.ecore" xmlns:org.eclipse.bpel.ui.uiextensionmodel="http:///org/eclipse/bpel/ui/uiextensionmodel.ecore" namespace="http://org.eclipse.bpel.ui/">
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.6"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.7"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.8"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.9"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.10"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.11"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.12"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.13"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.14"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.15"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.16"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.17"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.18"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.19"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.20"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.21"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.22"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.23"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@variables/@children.24"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:VariableExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.1/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.1/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.1/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.6"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.7"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.8"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.9"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.10"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.11"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.12"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.13"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.14"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.15"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.16"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.17"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.18"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.19"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.20"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.21"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.22"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.23"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.24"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.25"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.26"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.27"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.28"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.29"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.30"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.31"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.32"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.33"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.34"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.35"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.36"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.37"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.38"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.39"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.40"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.41"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.2/@copy.42"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.5/@copy.6"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.6"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@else/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@else/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@else/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.0/@copy.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@else/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@else/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@else/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@else/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.2/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@else/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.3/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.3/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.3/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.5"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:OnMessageExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@else/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@else/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@else/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@else/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@else/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.2/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.2/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@messages.0/@activity/@activities.0/@activity/@activities.2/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:OnAlarmExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0/@copy.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0/@copy.3"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.0/@copy.4"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.2"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.2/@copy.0"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.7/@activity/@activities.2/@activity/@activities.3/@activity/@activities.2/@activity/@activities.3/@activity/@activities.6/@alarm.0/@activity/@activities.2/@copy.1"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:CopyExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#//@activity/@activities.8"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ActivityExtension"/>
+  </extensions>
+  <extensions>
+    <extendedObject href="LoanApproval.bpel#/"/>
+    <extensionObject xsi:type="org.eclipse.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1545992765000"/>
+  </extensions>
+</extensionmodel:ExtensionMap>

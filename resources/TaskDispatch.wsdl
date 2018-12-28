@@ -3,12 +3,12 @@
 	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
 	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="urn:com:westbank:ws:business:TaskDispatch:2018:06"
-	targetNamespace="urn:com:westbank:ws:business:TaskDispatch:2018:06">
+	xmlns:tns="urn:com:westbank:ws:business:TaskDispatch:2019:01"
+	targetNamespace="urn:com:westbank:ws:business:TaskDispatch:2019:01">
 
 	<wsdl:types>
-		<xsd:schema targetNamespace="urn:com:westbank:ws:business:TaskDispatch:2018:06"
-						xmlns="urn:com:westbank:ws:business:TaskDispatch:2018:06"
+		<xsd:schema targetNamespace="urn:com:westbank:ws:business:TaskDispatch:2019:01"
+						xmlns="urn:com:westbank:ws:business:TaskDispatch:2019:01"
 						elementFormDefault="qualified">
 						
 			<xsd:element name="TaskDispatchRequest">

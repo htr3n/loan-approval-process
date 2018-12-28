@@ -3,3 +3,5 @@ target
 xtend-gen
 plugin.xml_gen
 LoanApproval.zip
+derby.log
+ode.log

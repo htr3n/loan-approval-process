@@ -6,61 +6,59 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:bp="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/process/executable 
-  http://docs.oasis-open.org/wsbpel/2.0/OS/process/executable/ws-bpel_executable.xsd"
-  
-  targetNamespace="urn:com:westbank:bpel:LoanApproval:2018:06"
-  xmlns:loanapproval="urn:com:westbank:ws:process:LoanApproval:2018:06"
-  xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2018:06"
-  xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2018:06"
-  xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2018:06"
-  xmlns:taskdispatch="urn:com:westbank:ws:business:TaskDispatch:2018:06"
-  xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
-  xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2018:06"
-  xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2018:06"
-  xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2018:06"
-  xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
+  xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/process/executable http://docs.oasis-open.org/wsbpel/2.0/OS/process/executable/ws-bpel_executable.xsd"
+  targetNamespace="urn:com:westbank:bpel:LoanApproval:2019:01"
+  xmlns:loanapproval="urn:com:westbank:ws:process:LoanApproval:2019:01"
+  xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2019:01"
+  xmlns:loanfile="urn:com:westbank:ws:business:LoanFile:2019:01"
+  xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2019:01"
+  xmlns:taskdispatch="urn:com:westbank:ws:business:TaskDispatch:2019:01"
+  xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2019:01"
+  xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2019:01"
+  xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2019:01"
+  xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2019:01"
+  xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01"
   xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
   xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
 
   <bp:import
-    namespace="urn:com:westbank:ws:process:LoanApproval:2018:06"
+    namespace="urn:com:westbank:ws:process:LoanApproval:2019:01"
     location="LoanApproval.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:TaskDispatch:2018:06"
+    namespace="urn:com:westbank:ws:business:TaskDispatch:2019:01"
     location="TaskDispatch.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:LoanSettlement:2018:06"
+    namespace="urn:com:westbank:ws:business:LoanSettlement:2019:01"
     location="LoanSettlement.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:LoanRisk:2018:06"
+    namespace="urn:com:westbank:ws:business:LoanRisk:2019:01"
     location="LoanRisk.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:LoanFile:2018:06"
+    namespace="urn:com:westbank:ws:business:LoanFile:2019:01"
     location="LoanFile.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:LoanContract:2018:06"
+    namespace="urn:com:westbank:ws:business:LoanContract:2019:01"
     location="LoanContract.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06"
+    namespace="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01"
     location="LoanApprovalClosing.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:CreditWorthiness:2018:06"
+    namespace="urn:com:westbank:ws:business:CreditWorthiness:2019:01"
     location="CreditWorthiness.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:BankPrivilege:2018:06"
+    namespace="urn:com:westbank:ws:business:BankPrivilege:2019:01"
     location="BankPrivilege.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
-    namespace="urn:com:westbank:ws:business:BankInformation:2018:06"
+    namespace="urn:com:westbank:ws:business:BankInformation:2019:01"
     location="BankInformation.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
   <bp:import
@@ -71,6 +69,7 @@
     namespace="urn:com:westbank:ws:client:CallbackLoanApproval"
     location="CallbackLoanApproval.wsdl"
     importType="http://schemas.xmlsoap.org/wsdl/" />
+
 
   <bp:partnerLinks>
     <bp:partnerLink
@@ -265,7 +264,7 @@
         <bp:from>
           <bp:literal>
             <p:LoanFileRequest
-              xmlns:p="urn:com:westbank:ws:business:LoanFile:2018:06">
+              xmlns:p="urn:com:westbank:ws:business:LoanFile:2019:01">
               <p:borrowerCustomerId><![CDATA[0]]></p:borrowerCustomerId>
               <p:borrowerTitle />
               <p:borrowerFirstName />
@@ -599,7 +598,7 @@
         <bp:from>
           <bp:literal>
             <p:BankPrivilegeRequest
-              xmlns:p="urn:com:westbank:ws:business:BankPrivilege:2018:06">
+              xmlns:p="urn:com:westbank:ws:business:BankPrivilege:2019:01">
               <p:borrowerCustomerId />
               <p:borrowerFirstName />
               <p:borrowerLastName />
@@ -676,7 +675,7 @@
             <bp:from>
               <bp:literal>
                 <p:BankInformationRequest
-                  xmlns:p="urn:com:westbank:ws:business:BankInformation:2018:06">
+                  xmlns:p="urn:com:westbank:ws:business:BankInformation:2019:01">
                   <p:loanAmount><![CDATA[0]]></p:loanAmount>
                   <p:loanTerm><![CDATA[0]]></p:loanTerm>
                   <p:interestRate><![CDATA[0]]></p:interestRate>
@@ -746,7 +745,7 @@
                 <bp:from>
                   <bp:literal>
                     <p:TaskDispatchRequest
-                      xmlns:p="urn:com:westbank:ws:business:TaskDispatch:2018:06">
+                      xmlns:p="urn:com:westbank:ws:business:TaskDispatch:2019:01">
                       <p:loanAmount><![CDATA[0]]></p:loanAmount>
                       <p:staffId />
                       <p:staffRole />
@@ -816,7 +815,7 @@
                     <bp:from>
                       <bp:literal>
                         <p:CreditWorthinessRequest
-                          xmlns:p="urn:com:westbank:ws:business:CreditWorthiness:2018:06">
+                          xmlns:p="urn:com:westbank:ws:business:CreditWorthiness:2019:01">
                           <p:loanFileId />
                           <p:numberOfIncidents><![CDATA[0]]></p:numberOfIncidents>
                           <p:numberOfBanks><![CDATA[0]]></p:numberOfBanks>
@@ -886,7 +885,7 @@
                         <bp:from>
                           <bp:literal>
                             <p:LoanRiskRequest
-                              xmlns:p="urn:com:westbank:ws:business:LoanRisk:2018:06">
+                              xmlns:p="urn:com:westbank:ws:business:LoanRisk:2019:01">
                               <p:loanFileId />
                               <p:staffId />
                               <p:staffRole />
@@ -968,7 +967,7 @@
                             <bp:from>
                               <bp:literal>
                                 <p:LoanContractRequest
-                                  xmlns:p="urn:com:westbank:ws:business:LoanContract:2018:06"
+                                  xmlns:p="urn:com:westbank:ws:business:LoanContract:2019:01"
                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                                   <p:loanFileId />
                                   <p:monthlyPayment><![CDATA[0]]></p:monthlyPayment>
@@ -1109,7 +1108,7 @@
                                       <bp:from>
                                         <bp:literal>
                                           <p:LoanSettlementRequest
-                                            xmlns:p="urn:com:westbank:ws:business:LoanSettlement:2018:06">
+                                            xmlns:p="urn:com:westbank:ws:business:LoanSettlement:2019:01">
                                             <p:loanFileId />
                                             <p:loanContractId />
                                             <p:staffId />
@@ -1228,7 +1227,7 @@
                                   <bp:from>
                                     <bp:literal>
                                       <p:LoanApprovalClosingRequest
-                                        xmlns:p="urn:com:westbank:ws:business:LoanApprovalClosing:2018:06">
+                                        xmlns:p="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01">
                                         <p:loanFileId />
                                         <p:loanContractId />
                                         <p:staffId />

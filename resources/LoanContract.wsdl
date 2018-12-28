@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions name="LoanContract"
-	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="urn:com:westbank:ws:business:LoanContract:2018:06"
-	targetNamespace="urn:com:westbank:ws:business:LoanContract:2018:06">
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:com:westbank:ws:business:LoanContract:2019:01"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:com:westbank:ws:business:LoanContract:2019:01">
 
 	<wsdl:types>
-		<xsd:schema targetNamespace="urn:com:westbank:ws:business:LoanContract:2018:06"
-			xmlns="urn:com:westbank:ws:business:LoanContract:2018:06"
+		<xsd:schema targetNamespace="urn:com:westbank:ws:business:LoanContract:2019:01"
+			xmlns="urn:com:westbank:ws:business:LoanContract:2019:01" 
 			elementFormDefault="qualified">
 
 			<xsd:element name="LoanContractRequest">
@@ -25,7 +23,7 @@
 			<xsd:element name="LoanContractResponse">
 				<xsd:complexType>
 					<xsd:sequence>
-            <xsd:element name="loanContractId" type="xsd:string" />
+						<xsd:element name="loanContractId" type="xsd:string" />
             <xsd:element name="borrowerCustomerId" type="xsd:long" />
             <xsd:element name="borrowerTitle" type="xsd:string" />
             <xsd:element name="borrowerFirstName" type="xsd:string" />
