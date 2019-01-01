@@ -5,14 +5,13 @@
   xmlns:ws="http://schemas.xmlsoap.org/wsdl/"
   xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" 
   xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
-
   xmlns:tns="urn:com:westbank:ws:process:LoanApproval:2019:01"
   targetNamespace="urn:com:westbank:ws:process:LoanApproval:2019:01"
-
+  
   xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2019:01"
   xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2019:01"
-  xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
-  xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract"
+  xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01"
+  xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract:2019:01"
   xmlns:creditworthiness="urn:com:westbank:ws:business:CreditWorthiness:2019:01"
   xmlns:loanapprovalclosing="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01"
   xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2019:01"
@@ -20,15 +19,15 @@
   xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2019:01"
   xmlns:loancontract="urn:com:westbank:ws:business:LoanContract:2019:01"
   xmlns:taskdispatch="urn:com:westbank:ws:business:TaskDispatch:2019:01"
-  xmlns:testmock="urn:com:westbank:ws:TestMock"
+  
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/plnktype 
       http://docs.oasis-open.org/wsbpel/2.0/OS/plnktype/ws-bpel_plnktype.xsd
       http://docs.oasis-open.org/wsbpel/2.0/varprop
       http://docs.oasis-open.org/wsbpel/2.0/OS/varprop/ws-bpel_varprop.xsd">
-  <!-- 
-  <ws:import namespace="urn:com:westbank:ws:client:CallbackLoanApproval" location="CallbackLoanApproval.wsdl" />
-  <ws:import namespace="urn:com:westbank:ws:client:CallbackLoanContract" location="CallbackLoanContract.wsdl" />
+  <!--  
+  <ws:import namespace="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01" location="CallbackLoanApproval.wsdl" />
+  <ws:import namespace="urn:com:westbank:ws:client:CallbackLoanContract:2019:01" location="CallbackLoanContract.wsdl" />
   <ws:import namespace="urn:com:westbank:ws:business:BankInformation:2019:01" location="BankInformation.wsdl" />
   <ws:import namespace="urn:com:westbank:ws:business:BankPrivilege:2019:01" location="BankPrivilege.wsdl" />
   <ws:import namespace="urn:com:westbank:ws:business:CreditWorthiness:2019:01" location="CreditWorthiness.wsdl" />
@@ -38,12 +37,10 @@
   <ws:import namespace="urn:com:westbank:ws:business:LoanRisk:2019:01" location="LoanRisk.wsdl" />
   <ws:import namespace="urn:com:westbank:ws:business:LoanContract:2019:01" location="LoanContract.wsdl" />
   <ws:import namespace="urn:com:westbank:ws:business:TaskDispatch:2019:01" location="TaskDispatch.wsdl" />
-  <ws:import namespace="urn:com:westbank:ws:TestMock" location="TestMock.wsdl" />
-   -->
+  -->
    
   <ws:types>
-    <xsd:schema
-      targetNamespace="urn:com:westbank:ws:process:LoanApproval:2019:01"
+    <xsd:schema targetNamespace="urn:com:westbank:ws:process:LoanApproval:2019:01"
       xmlns="urn:com:westbank:ws:process:LoanApproval:2019:01"
       elementFormDefault="qualified">
 
@@ -76,8 +73,7 @@
             <xsd:element name="coBorrowerOccupation" type="xsd:string" />
             <xsd:element name="coBorrowerLengthOfService" type="xsd:int" />
             <xsd:element name="coBorrowerIncome" type="xsd:double" />
-
-            <xsd:element name="loanFileId" type="xsd:string" />
+            <xsd:element name="loanFileId" type="xsd:long" />
             <xsd:element name="loanReason" type="xsd:string" />
             <xsd:element name="loanAmount" type="xsd:double" />
             <xsd:element name="loanTerm" type="xsd:int" />
@@ -118,9 +114,9 @@
       <xsd:element name="ManagerSignature" >
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="staffId" type="xsd:string" />
-            <xsd:element name="contractId" type="xsd:string" />
-            <xsd:element name="loanFileId" type="xsd:string" />
+            <xsd:element name="staffId" type="xsd:long" />
+            <xsd:element name="contractId" type="xsd:long" />
+            <xsd:element name="loanFileId" type="xsd:long" />
             <xsd:element name="token" type="TokenType" />
           </xsd:sequence>
         </xsd:complexType>
@@ -140,9 +136,9 @@
       <xsd:element name="StaffIdentity">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="staffId" type="xsd:string"/>
+            <xsd:element name="staffId" type="xsd:long"/>
             <xsd:element name="staffRole" type="xsd:string"/>                       
-            <xsd:element name="loanFileId" type="xsd:string"/>
+            <xsd:element name="loanFileId" type="xsd:long"/>
             <xsd:element name="secureToken" type="xsd:base64Binary" />                       
           </xsd:sequence>
         </xsd:complexType>
@@ -152,8 +148,8 @@
         <xsd:complexType>
           <xsd:sequence>
             <xsd:element name="granted" type="xsd:boolean"/>
-            <xsd:element name="loanFileId" type="xsd:string"/>
-            <xsd:element name="staffId" type="xsd:string"/>
+            <xsd:element name="loanFileId" type="xsd:long"/>
+            <xsd:element name="staffId" type="xsd:long"/>
             <xsd:element name="staffRole" type="xsd:string"/>                       
             <xsd:element name="secureToken" type="xsd:base64Binary" />                       
           </xsd:sequence>
@@ -291,11 +287,7 @@
       <plnk:role name="CallbackLoanContract" portType="callbackloancontract:CallbackLoanContract"/>
   </plnk:partnerLinkType>
 
-  <plnk:partnerLinkType name="TestMock">
-      <plnk:role name="TestMock" portType="testmock:TestMock"/>
-  </plnk:partnerLinkType>
-
-  <vprop:property name="loanFileId" type="xsd:string"/>
+  <vprop:property name="loanFileId" type="xsd:long"/>
   
   <vprop:propertyAlias propertyName="tns:loanFileId" messageType="tns:LoanApprovalRequest" part="request" >
     <vprop:query>/message/request/tns:LoanApprovalRequest/tns:loanFileId</vprop:query>
