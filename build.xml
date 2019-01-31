@@ -3,7 +3,6 @@
 	<property file="project.properties" />
 	<property name="packagefile" value="${basedir}/${ant.project.name}.zip" />
 
-
 	<macrodef name="bpelc">
 		<attribute name="bpel" />
 		<sequential>
