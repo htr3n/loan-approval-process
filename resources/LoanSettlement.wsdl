@@ -14,7 +14,7 @@
             <xsd:element name="LoanSettlementRequest">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="loanFileId" type="xsd:long"/>
+                        <xsd:element name="loanFileId" type="xsd:string"/>
                         <xsd:element name="loanContractId" type="xsd:long"/>
                         <xsd:element name="id" type="xsd:string"/>
                         <xsd:element name="staffRole" type="xsd:string"/>
@@ -63,7 +63,7 @@
 
     <wsdl:service name="LoanSettlement">
         <wsdl:port binding="tns:LoanSettlementSOAP" name="LoanSettlementPort">
-            <soap:address location="http://localhost:9999/portal/services/LoanSettlement"/>
+            <soap:address location="http://localhost:9999/services/LoanSettlement"/>
         </wsdl:port>
     </wsdl:service>
 

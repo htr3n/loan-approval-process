@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03"
-	 xmlns:bpel="urn:com:westbank:bpel:LoanApproval:2019:01"
+   xmlns:bpel="urn:com:westbank:bpel:LoanApproval:2019:01"
    xmlns:ws="urn:com:westbank:ws:process:LoanApproval:2019:01"
    xmlns:bankinformation="urn:com:westbank:ws:business:BankInformation:2019:01"
    xmlns:bankprivilege="urn:com:westbank:ws:business:BankPrivilege:2019:01"
@@ -11,8 +11,8 @@
    xmlns:loanrisk="urn:com:westbank:ws:business:LoanRisk:2019:01"
    xmlns:loansettlement="urn:com:westbank:ws:business:LoanSettlement:2019:01"
    xmlns:dispatch="urn:com:westbank:ws:business:TaskDispatch:2019:01"
-   xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval"
-   xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract">
+   xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01"
+   xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract:2019:01">
 
 	<process name="bpel:LoanApproval">
 		<active>true</active>

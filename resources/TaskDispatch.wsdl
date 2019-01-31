@@ -15,8 +15,6 @@
                 <xsd:complexType>
                     <xsd:sequence>
                         <xsd:element name="loanAmount" type="xsd:double"/>
-                        <xsd:element name="staffId" type="xsd:long"/>
-                        <xsd:element name="staffRole" type="xsd:string"/>
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:element>
@@ -61,7 +59,7 @@
 
     <wsdl:service name="TaskDispatch">
         <wsdl:port binding="tns:TaskDispatchSOAP" name="TaskDispatchPort">
-            <soap:address location="http://localhost:9999/portal/services/TaskDispatch"/>
+            <soap:address location="http://localhost:9999/services/TaskDispatch"/>
         </wsdl:port>
     </wsdl:service>
 

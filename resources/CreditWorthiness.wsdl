@@ -14,10 +14,10 @@
             <xsd:element name="CreditWorthinessRequest">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="loanFileId" type="xsd:long"/>
+                        <xsd:element name="loanFileId" type="xsd:string"/>
                         <xsd:element name="numberOfIncidents" type="xsd:int"/>
                         <xsd:element name="numberOfBanks" type="xsd:int"/>
-                        <xsd:element name="staffId" type="xsd:long"/>
+                        <xsd:element name="staffId" type="xsd:string"/>
                         <xsd:element name="staffRole" type="xsd:string"/>
                     </xsd:sequence>
                 </xsd:complexType>
@@ -63,7 +63,7 @@
 
     <wsdl:service name="CreditWorthiness">
         <wsdl:port name="CreditWorthinessPort" binding="tns:CreditWorthinessSOAP">
-            <soap:address location="http://localhost:9999/portal/services/CreditWorthiness"/>
+            <soap:address location="http://localhost:9999/services/CreditWorthiness"/>
         </wsdl:port>
     </wsdl:service>
 

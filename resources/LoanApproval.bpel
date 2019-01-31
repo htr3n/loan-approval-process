@@ -1,9 +1,6 @@
-<bp:process name="LoanApproval"
-  queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"
-  expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"
-  suppressJoinFailure="no"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:bp="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+<bp:process name="LoanApproval" queryLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0"
+  expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath2.0" suppressJoinFailure="no"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:bp="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://docs.oasis-open.org/wsbpel/2.0/process/executable http://docs.oasis-open.org/wsbpel/2.0/OS/process/executable/ws-bpel_executable.xsd"
   targetNamespace="urn:com:westbank:bpel:LoanApproval:2019:01"
@@ -20,36 +17,58 @@
   xmlns:callbackloanapproval="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01"
   xmlns:callbackloancontract="urn:com:westbank:ws:client:CallbackLoanContract:2019:01">
 
-  <bp:import location="LoanApproval.wsdl" namespace="urn:com:westbank:ws:process:LoanApproval:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="TaskDispatch.wsdl" namespace="urn:com:westbank:ws:business:TaskDispatch:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="LoanSettlement.wsdl" namespace="urn:com:westbank:ws:business:LoanSettlement:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="LoanRisk.wsdl" namespace="urn:com:westbank:ws:business:LoanRisk:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="LoanFile.wsdl" namespace="urn:com:westbank:ws:business:LoanFile:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="LoanContract.wsdl" namespace="urn:com:westbank:ws:business:LoanContract:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="LoanApprovalClosing.wsdl" namespace="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="CreditWorthiness.wsdl" namespace="urn:com:westbank:ws:business:CreditWorthiness:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="BankPrivilege.wsdl" namespace="urn:com:westbank:ws:business:BankPrivilege:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="BankInformation.wsdl" namespace="urn:com:westbank:ws:business:BankInformation:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="CallbackLoanContract.wsdl" namespace="urn:com:westbank:ws:client:CallbackLoanContract:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
-  <bp:import location="CallbackLoanApproval.wsdl" namespace="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanApproval.wsdl" namespace="urn:com:westbank:ws:process:LoanApproval:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="TaskDispatch.wsdl" namespace="urn:com:westbank:ws:business:TaskDispatch:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanSettlement.wsdl" namespace="urn:com:westbank:ws:business:LoanSettlement:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanRisk.wsdl" namespace="urn:com:westbank:ws:business:LoanRisk:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanFile.wsdl" namespace="urn:com:westbank:ws:business:LoanFile:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanContract.wsdl" namespace="urn:com:westbank:ws:business:LoanContract:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="LoanApprovalClosing.wsdl"
+    namespace="urn:com:westbank:ws:business:LoanApprovalClosing:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="CreditWorthiness.wsdl"
+    namespace="urn:com:westbank:ws:business:CreditWorthiness:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="BankPrivilege.wsdl" namespace="urn:com:westbank:ws:business:BankPrivilege:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="BankInformation.wsdl" namespace="urn:com:westbank:ws:business:BankInformation:2019:01"
+    importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="CallbackLoanContract.wsdl"
+    namespace="urn:com:westbank:ws:client:CallbackLoanContract:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
+  <bp:import location="CallbackLoanApproval.wsdl"
+    namespace="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01" importType="http://schemas.xmlsoap.org/wsdl/" />
 
   <bp:partnerLinks>
     <bp:partnerLink name="LoanApproval" partnerLinkType="loanapproval:LoanApproval" myRole="LoanApproval" />
     <bp:partnerLink name="LoanFile" partnerLinkType="loanapproval:LoanFile" partnerRole="LoanFile" />
-    <bp:partnerLink name="BankPrivilege" partnerLinkType="loanapproval:BankPrivilege" partnerRole="BankPrivilege" />
-    <bp:partnerLink name="BankInformation" partnerLinkType="loanapproval:BankInformation" partnerRole="BankInformation" />
-    <bp:partnerLink name="TaskDispatch" partnerLinkType="loanapproval:TaskDispatch" partnerRole="TaskDispatch" />
-    <bp:partnerLink name="CreditWorthiness" partnerLinkType="loanapproval:CreditWorthiness" partnerRole="CreditWorthiness" />
+    <bp:partnerLink name="BankPrivilege" partnerLinkType="loanapproval:BankPrivilege"
+      partnerRole="BankPrivilege" />
+    <bp:partnerLink name="BankInformation" partnerLinkType="loanapproval:BankInformation"
+      partnerRole="BankInformation" />
+    <bp:partnerLink name="TaskDispatch" partnerLinkType="loanapproval:TaskDispatch"
+      partnerRole="TaskDispatch" />
+    <bp:partnerLink name="CreditWorthiness" partnerLinkType="loanapproval:CreditWorthiness"
+      partnerRole="CreditWorthiness" />
     <bp:partnerLink name="LoanRisk" partnerLinkType="loanapproval:LoanRisk" partnerRole="LoanRisk" />
-    <bp:partnerLink name="LoanContract" partnerLinkType="loanapproval:LoanContract" partnerRole="LoanContract" />
-    <bp:partnerLink name="LoanSettlement" partnerLinkType="loanapproval:LoanSettlement" partnerRole="LoanSettlement" />
-    <bp:partnerLink name="LoanApprovalClosing" partnerLinkType="loanapproval:LoanApprovalClosing" partnerRole="LoanApprovalClosing" />
-    <bp:partnerLink name="CallbackLoanContract" partnerLinkType="loanapproval:CallbackLoanContract" partnerRole="CallbackLoanContract" />
-    <bp:partnerLink name="CallbackLoanApproval" partnerLinkType="loanapproval:CallbackLoanApproval" partnerRole="CallbackLoanApproval" />
+    <bp:partnerLink name="LoanContract" partnerLinkType="loanapproval:LoanContract"
+      partnerRole="LoanContract" />
+    <bp:partnerLink name="LoanSettlement" partnerLinkType="loanapproval:LoanSettlement"
+      partnerRole="LoanSettlement" />
+    <bp:partnerLink name="LoanApprovalClosing" partnerLinkType="loanapproval:LoanApprovalClosing"
+      partnerRole="LoanApprovalClosing" />
+    <bp:partnerLink name="CallbackLoanContract" partnerLinkType="loanapproval:CallbackLoanContract"
+      partnerRole="CallbackLoanContract" />
+    <bp:partnerLink name="CallbackLoanApproval" partnerLinkType="loanapproval:CallbackLoanApproval"
+      partnerRole="CallbackLoanApproval" />
   </bp:partnerLinks>
 
   <bp:variables>
-    <bp:variable name="staffIdentity" messageType="loanapproval:StaffIdentity" />
+    <bp:variable name="creditBrokerDecision" messageType="loanapproval:CreditBrokerDecision" />
+    <bp:variable name="clerkOrSupervisorDecision" messageType="loanapproval:ClerkOrSupervisorDecision" />
     <bp:variable name="managerDecision" messageType="loanapproval:ManagerDecision" />
     <bp:variable name="managerSignature" messageType="loanapproval:ManagerSignature" />
     <bp:variable name="customerDecision" messageType="loanapproval:CustomerDecision" />
@@ -81,7 +100,8 @@
   </bp:correlationSets>
 
   <bp:sequence name="Main">
-    <bp:receive name="ReceiveLoanRequest" createInstance="yes" partnerLink="LoanApproval" operation="start" portType="loanapproval:LoanApproval" variable="loanApprovalInput">
+    <bp:receive name="ReceiveLoanRequest" createInstance="yes" partnerLink="LoanApproval" operation="start"
+      portType="loanapproval:LoanApproval" variable="loanApprovalInput">
       <bp:correlations>
         <bp:correlation set="loanId" initiate="yes" />
       </bp:correlations>
@@ -91,7 +111,8 @@
       <bp:copy ignoreMissingFromData="yes">
         <bp:from>
           <bp:literal>
-            <p:CallbackLoanApprovalRequest xmlns:p="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01">
+            <p:CallbackLoanApprovalRequest
+              xmlns:p="urn:com:westbank:ws:client:CallbackLoanApproval:2019:01">
               <p:borrowerCustomerId><![CDATA[-1]]></p:borrowerCustomerId>
               <p:contractId />
               <p:loanFileId />
@@ -100,7 +121,7 @@
             </p:CallbackLoanApprovalRequest>
           </bp:literal>
         </bp:from>
-        <bp:to variable="callbackLoanApprovalInput" part="request"/>
+        <bp:to variable="callbackLoanApprovalInput" part="request" />
       </bp:copy>
       <bp:copy ignoreMissingFromData="yes">
         <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
@@ -160,7 +181,7 @@
               <p:personalCapitalContribution><![CDATA[0]]></p:personalCapitalContribution>
               <p:accessSensitiveData><![CDATA[false]]></p:accessSensitiveData>
               <p:staffId />
-              <p:staffRole />
+              <p:agencyCode />
             </p:LoanFileRequest>
           </bp:literal>
         </bp:from>
@@ -176,7 +197,8 @@
       </bp:copy>
       <bp:copy ignoreMissingFromData="yes">
         <bp:from>$loanApprovalInput.request/loanapproval:borrowerFirstName</bp:from>
-        <bp:to>$loanFileInput.request/loanfile:borrowerFirstName</bp:to></bp:copy>
+        <bp:to>$loanFileInput.request/loanfile:borrowerFirstName</bp:to>
+      </bp:copy>
       <bp:copy ignoreMissingFromData="yes">
         <bp:from>$loanApprovalInput.request/loanapproval:borrowerLastName</bp:from>
         <bp:to>$loanFileInput.request/loanfile:borrowerLastName</bp:to>
@@ -333,11 +355,17 @@
         <bp:from>$loanApprovalInput.request/loanapproval:accessSensitiveData</bp:from>
         <bp:to>$loanFileInput.request/loanfile:accessSensitiveData</bp:to>
       </bp:copy>
+      <bp:copy ignoreMissingFromData="yes">
+        <bp:from>$loanApprovalInput.request/loanapproval:agencyCode</bp:from>
+        <bp:to>$loanFileInput.request/loanfile:agencyCode</bp:to>
+      </bp:copy>
     </bp:assign>
 
-    <bp:invoke name="CreateLoanFile" partnerLink="LoanFile" operation="update" inputVariable="loanFileInput" outputVariable="loanFileOutput"/>
+    <bp:invoke name="CreateLoanFile" partnerLink="LoanFile" operation="update" inputVariable="loanFileInput"
+      outputVariable="loanFileOutput" />
 
-    <bp:receive name="ProcessedByBroker" createInstance="no" partnerLink="LoanApproval" operation="processedByStaff" portType="loanapproval:LoanApproval" variable="staffIdentity">
+    <bp:receive name="ProcessedByBroker" createInstance="no" partnerLink="LoanApproval"
+      operation="processedByCreditBroker" portType="loanapproval:LoanApproval" variable="creditBrokerDecision">
       <bp:correlations>
         <bp:correlation set="loanId" initiate="no" />
       </bp:correlations>
@@ -347,8 +375,7 @@
       <bp:copy>
         <bp:from>
           <bp:literal>
-            <p:BankPrivilegeRequest
-              xmlns:p="urn:com:westbank:ws:business:BankPrivilege:2019:01">
+            <p:BankPrivilegeRequest xmlns:p="urn:com:westbank:ws:business:BankPrivilege:2019:01">
               <p:borrowerCustomerId />
               <p:borrowerFirstName />
               <p:borrowerLastName />
@@ -358,7 +385,7 @@
             </p:BankPrivilegeRequest>
           </bp:literal>
         </bp:from>
-        <bp:to variable="bankPrivilegeInput" part="request"/>
+        <bp:to variable="bankPrivilegeInput" part="request" />
       </bp:copy>
       <bp:copy ignoreMissingFromData="yes">
         <bp:from>$loanApprovalInput.request/loanapproval:borrowerCustomerId</bp:from>
@@ -377,29 +404,27 @@
         <bp:to>$bankPrivilegeInput.request/bankprivilege:borrowerDateOfBirth</bp:to>
       </bp:copy>
       <bp:copy ignoreMissingFromData="yes">
-        <bp:from>$staffIdentity.request/loanapproval:staffId</bp:from>
+        <bp:from>$creditBrokerDecision.request/loanapproval:staffId</bp:from>
         <bp:to>$bankPrivilegeInput.request/bankprivilege:staffId</bp:to>
       </bp:copy>
+      <!--
       <bp:copy ignoreMissingFromData="yes">
-        <bp:from>$staffIdentity.request/loanapproval:staffRole</bp:from>
+        <bp:from>$creditBrokerDecision.request/loanapproval:staffRole</bp:from>
         <bp:to>$bankPrivilegeInput.request/bankprivilege:staffRole</bp:to>
       </bp:copy>
+      -->
     </bp:assign>
-    
-    <bp:invoke name="CheckBankPrivilege" partnerLink="BankPrivilege" operation="check" portType="bankprivilege:BankPrivilege" 
-    			inputVariable="bankPrivilegeInput" outputVariable="bankPrivilegeOutput" />
 
-    <bp:if
-      name="IsPrivilegeNotSuspended">
+    <bp:invoke name="CheckBankPrivilege" partnerLink="BankPrivilege" operation="verify"
+      portType="bankprivilege:BankPrivilege" inputVariable="bankPrivilegeInput" outputVariable="bankPrivilegeOutput" />
+
+    <bp:if name="IsPrivilegeNotSuspended">
       <bp:condition>
         <![CDATA[$bankPrivilegeOutput.response/bankprivilege:numberOfIncidents <= 0]]>
       </bp:condition>
-      <bp:sequence
-        name="PrivilegeNotSuspended">
-        <bp:assign
-          name="PrepareBankInformation">
-          <bp:copy
-            ignoreMissingFromData="yes">
+      <bp:sequence name="PrivilegeNotSuspended">
+        <bp:assign name="PrepareBankInformation">
+          <bp:copy ignoreMissingFromData="yes">
             <bp:from>
               <bp:literal>
                 <p:BankInformationRequest
@@ -412,108 +437,94 @@
                 </p:BankInformationRequest>
               </bp:literal>
             </bp:from>
-            <bp:to variable="bankInformationInput" part="request"/>
+            <bp:to variable="bankInformationInput" part="request" />
           </bp:copy>
-          <bp:copy
-            ignoreMissingFromData="yes">
+          <bp:copy ignoreMissingFromData="yes">
             <bp:from>$loanApprovalInput.request/loanapproval:totalPurchasePrice -
               $loanApprovalInput.request/loanapproval:personalCapitalContribution
             </bp:from>
             <bp:to>$bankInformationInput.request/bankinformation:loanAmount
             </bp:to>
           </bp:copy>
-          <bp:copy
-            ignoreMissingFromData="yes">
+          <bp:copy ignoreMissingFromData="yes">
             <bp:from>$loanApprovalInput.request/loanapproval:loanTerm</bp:from>
             <bp:to>$bankInformationInput.request/bankinformation:loanTerm
             </bp:to>
           </bp:copy>
-          <bp:copy
-            ignoreMissingFromData="yes">
+          <bp:copy ignoreMissingFromData="yes">
             <bp:from>$loanApprovalInput.request/loanapproval:interestRate
             </bp:from>
             <bp:to>$bankInformationInput.request/bankinformation:interestRate
             </bp:to>
           </bp:copy>
-          <bp:copy
-            ignoreMissingFromData="yes">
-            <bp:from>$staffIdentity.request/loanapproval:staffId</bp:from>
+          <bp:copy ignoreMissingFromData="yes">
+            <bp:from>$creditBrokerDecision.request/loanapproval:staffId</bp:from>
             <bp:to>$bankInformationInput.request/bankinformation:staffId
             </bp:to>
           </bp:copy>
-          <bp:copy
-            ignoreMissingFromData="yes">
-            <bp:from>$staffIdentity.request/loanapproval:staffRole</bp:from>
+          <!--
+          <bp:copy ignoreMissingFromData="yes">
+            <bp:from>$creditBrokerDecision.request/loanapproval:staffRole</bp:from>
             <bp:to>$bankInformationInput.request/bankinformation:staffRole
             </bp:to>
           </bp:copy>
+          -->
         </bp:assign>
-        
-        <bp:invoke name="RequestBankInformation" partnerLink="BankInformation" operation="retrieve" portType="bankinformation:BankInformation"
-          inputVariable="bankInformationInput" outputVariable="bankInformationOutput" />
 
-        <bp:if
-          name="AreConditionsSatisfied">
+        <bp:invoke name="RequestBankInformation" partnerLink="BankInformation" operation="retrieve"
+          portType="bankinformation:BankInformation" inputVariable="bankInformationInput"
+          outputVariable="bankInformationOutput" />
+
+        <bp:if name="AreConditionsSatisfied">
+          <!-- 
           <bp:condition><![CDATA[$bankInformationOutput.response/bankinformation:monthlyPayment
-              <= 0.33*($loanApprovalInput.request/loanapproval:borrowerIncome+ 
+              <= ($loanApprovalInput.request/loanapproval:borrowerIncome+
               $loanApprovalInput.request/loanapproval:coBorrowerIncome) div 12]]></bp:condition>
+          -->
+          <bp:condition><![CDATA[true() = true()]]></bp:condition>
           <bp:sequence name="ConditionSatisfied">
             <bp:assign name="PrepareDispatchTask">
               <bp:copy ignoreMissingFromData="yes">
                 <bp:from>
                   <bp:literal>
-                    <p:TaskDispatchRequest xmlns:p="urn:com:westbank:ws:business:TaskDispatch:2019:01">
+                    <p:TaskDispatchRequest
+                      xmlns:p="urn:com:westbank:ws:business:TaskDispatch:2019:01">
                       <p:loanAmount><![CDATA[0]]></p:loanAmount>
+                      <!-- 
                       <p:staffId />
                       <p:staffRole />
+                      -->
                     </p:TaskDispatchRequest>
                   </bp:literal>
                 </bp:from>
                 <bp:to variable="taskDispatchInput" part="request">
                 </bp:to>
               </bp:copy>
-              <bp:copy
-                ignoreMissingFromData="yes">
-                <bp:from>$loanApprovalInput.request/loanapproval:loanAmount
-                </bp:from>
-                <bp:to>$taskDispatchInput.request/taskdispatch:loanAmount
-                </bp:to>
-              </bp:copy>
-              <bp:copy
-                ignoreMissingFromData="yes">
-                <bp:from>$staffIdentity.request/loanapproval:staffId</bp:from>
-                <bp:to>$taskDispatchInput.request/taskdispatch:staffId
-                </bp:to>
-              </bp:copy>
-              <bp:copy
-                ignoreMissingFromData="yes">
-                <bp:from>$staffIdentity.request/loanapproval:staffRole</bp:from>
-                <bp:to>$taskDispatchInput.request/taskdispatch:staffRole
-                </bp:to>
+              <bp:copy ignoreMissingFromData="yes">
+                <bp:from>$loanApprovalInput.request/loanapproval:loanAmount</bp:from>
+                <bp:to>$taskDispatchInput.request/taskdispatch:loanAmount</bp:to>
               </bp:copy>
             </bp:assign>
-            
-            <bp:invoke name="DispatchTask" partnerLink="TaskDispatch" operation="dispatch" portType="taskdispatch:TaskDispatch" inputVariable="taskDispatchInput" outputVariable="taskDispatchOutput" />
 
-            <bp:receive name="ProcessedBySupervisorOrClerk" createInstance="no" partnerLink="LoanApproval" operation="processedByStaff" portType="loanapproval:LoanApproval" variable="staffIdentity">
+            <bp:invoke name="DispatchTask" partnerLink="TaskDispatch" operation="dispatch"
+              portType="taskdispatch:TaskDispatch" inputVariable="taskDispatchInput" outputVariable="taskDispatchOutput" />
+
+            <bp:receive name="ProcessedBySupervisorOrClerk" createInstance="no" partnerLink="LoanApproval"
+              operation="processedByClerkOrSupervisor" portType="loanapproval:LoanApproval"
+              variable="clerkOrSupervisorDecision">
               <bp:correlations>
                 <bp:correlation set="loanId" initiate="no" />
               </bp:correlations>
             </bp:receive>
+
             <!--  Check if the role is correct -->
-            <bp:if
-              name="IsSupervisorOrClerk">
-              <bp:condition>
-                $taskDispatchOutput.response/taskdispatch:role
-                =
-                $staffIdentity.request/loanapproval:staffRole
+            <bp:if name="IsSupervisorOrClerk">
+              <bp:condition>$taskDispatchOutput.response/taskdispatch:role =
+                $clerkOrSupervisorDecision.request/loanapproval:staffRole
               </bp:condition>
-              <bp:sequence
-                name="ProcessedBySupervisorOrClerk">
-                <bp:assign
-                  name="PrepareCreditWorthiness">
-                  <bp:copy
-                    ignoreMissingFromData="yes">
+              <bp:sequence name="ProcessedBySupervisorOrClerk">
+                <bp:assign name="PrepareCreditWorthiness">
+                  <bp:copy ignoreMissingFromData="yes">
                     <bp:from>
                       <bp:literal>
                         <p:CreditWorthinessRequest
@@ -526,286 +537,173 @@
                         </p:CreditWorthinessRequest>
                       </bp:literal>
                     </bp:from>
-                    <bp:to
-                      variable="creditWorthinessInput"
-                      part="request">
-                    </bp:to>
+                    <bp:to variable="creditWorthinessInput" part="request" />
                   </bp:copy>
-                  <bp:copy
-                    ignoreMissingFromData="yes">
-                    <bp:from>$loanApprovalInput.request/loanapproval:loanFileId
-                    </bp:from>
-                    <bp:to>$creditWorthinessInput.request/creditworthiness:loanFileId
-                    </bp:to>
+                  <bp:copy ignoreMissingFromData="yes">
+                    <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
+                    <bp:to>$creditWorthinessInput.request/creditworthiness:loanFileId</bp:to>
                   </bp:copy>
-                  <bp:copy
-                    ignoreMissingFromData="yes">
-                    <bp:from>$bankPrivilegeOutput.response/bankprivilege:numberOfIncidents
-                    </bp:from>
-                    <bp:to>$creditWorthinessInput.request/creditworthiness:numberOfIncidents
-                    </bp:to>
+                  <bp:copy ignoreMissingFromData="yes">
+                    <bp:from>$bankPrivilegeOutput.response/bankprivilege:numberOfIncidents</bp:from>
+                    <bp:to>$creditWorthinessInput.request/creditworthiness:numberOfIncidents</bp:to>
                   </bp:copy>
-                  <bp:copy
-                    ignoreMissingFromData="yes">
-                    <bp:from>$bankPrivilegeOutput.response/bankprivilege:numberOfBanks
-                    </bp:from>
-                    <bp:to>$creditWorthinessInput.request/creditworthiness:numberOfBanks
-                    </bp:to>
+                  <bp:copy ignoreMissingFromData="yes">
+                    <bp:from>$bankPrivilegeOutput.response/bankprivilege:numberOfBanks</bp:from>
+                    <bp:to>$creditWorthinessInput.request/creditworthiness:numberOfBanks</bp:to>
                   </bp:copy>
-                  <bp:copy
-                    ignoreMissingFromData="yes">
-                    <bp:from>$staffIdentity.request/loanapproval:staffId</bp:from>
-                    <bp:to>$creditWorthinessInput.request/creditworthiness:staffId
-                    </bp:to>
+                  <bp:copy ignoreMissingFromData="yes">
+                    <bp:from>$clerkOrSupervisorDecision.request/loanapproval:staffId</bp:from>
+                    <bp:to>$creditWorthinessInput.request/creditworthiness:staffId</bp:to>
                   </bp:copy>
-                  <bp:copy
-                    ignoreMissingFromData="yes">
-                    <bp:from>$staffIdentity.request/loanapproval:staffRole
-                    </bp:from>
-                    <bp:to>$creditWorthinessInput.request/creditworthiness:staffRole
-                    </bp:to>
+                  <bp:copy ignoreMissingFromData="yes">
+                    <bp:from>$clerkOrSupervisorDecision.request/loanapproval:staffRole</bp:from>
+                    <bp:to>$creditWorthinessInput.request/creditworthiness:staffRole</bp:to>
                   </bp:copy>
                 </bp:assign>
-                <bp:invoke
-                  name="CheckCreditWorthiness"
-                  partnerLink="CreditWorthiness"
-                  operation="check"
-                  portType="creditworthiness:CreditWorthiness"
-                  inputVariable="creditWorthinessInput"
+
+                <bp:invoke name="CheckCreditWorthiness" partnerLink="CreditWorthiness" operation="check"
+                  portType="creditworthiness:CreditWorthiness" inputVariable="creditWorthinessInput"
                   outputVariable="creditWorthinessOutput" />
-                <bp:if
-                  name="CreditWorthinessOK">
-                  <bp:condition>
-                    $creditWorthinessOutput.response/creditworthiness:creditWorthiness
-                    = true()
-                </bp:condition>
+
+                <bp:if name="CreditWorthinessOK">
+                  <bp:condition>$creditWorthinessOutput.response/creditworthiness:creditWorthiness = true()</bp:condition>
                   <bp:sequence>
-                    <bp:assign
-                      name="PrepareLoanRisk">
-                      <bp:copy
-                        ignoreMissingFromData="yes">
+                    <bp:assign name="PrepareLoanRisk">
+                      <bp:copy ignoreMissingFromData="yes">
                         <bp:from>
                           <bp:literal>
-                            <p:LoanRiskRequest
-                              xmlns:p="urn:com:westbank:ws:business:LoanRisk:2019:01">
+                            <p:LoanRiskRequest xmlns:p="urn:com:westbank:ws:business:LoanRisk:2019:01">
                               <p:loanFileId />
                               <p:staffId />
                               <p:staffRole />
                             </p:LoanRiskRequest>
                           </bp:literal>
                         </bp:from>
-                        <bp:to
-                          variable="loanRiskInput"
-                          part="request">
-                        </bp:to>
+                        <bp:to variable="loanRiskInput" part="request" />
                       </bp:copy>
-                      <bp:copy
-                        ignoreMissingFromData="yes">
-                        <bp:from>$loanApprovalInput.request/loanapproval:loanFileId
-                        </bp:from>
-                        <bp:to>$loanRiskInput.request/loanrisk:loanFileId
-                        </bp:to>
+                      <bp:copy ignoreMissingFromData="yes">
+                        <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
+                        <bp:to>$loanRiskInput.request/loanrisk:loanFileId</bp:to>
                       </bp:copy>
-                      <bp:copy
-                        ignoreMissingFromData="yes">
-                        <bp:from>$staffIdentity.request/loanapproval:staffId
-                        </bp:from>
-                        <bp:to>$loanRiskInput.request/loanrisk:staffId
-                        </bp:to>
+                      <bp:copy ignoreMissingFromData="yes">
+                        <bp:from>$clerkOrSupervisorDecision.request/loanapproval:staffId</bp:from>
+                        <bp:to>$loanRiskInput.request/loanrisk:staffId</bp:to>
                       </bp:copy>
-                      <bp:copy
-                        ignoreMissingFromData="yes">
-                        <bp:from>$staffIdentity.request/loanapproval:staffRole
-                        </bp:from>
-                        <bp:to>$loanRiskInput.request/loanrisk:staffRole
-                        </bp:to>
+                      <bp:copy ignoreMissingFromData="yes">
+                        <bp:from>$clerkOrSupervisorDecision.request/loanapproval:staffRole</bp:from>
+                        <bp:to>$loanRiskInput.request/loanrisk:staffRole</bp:to>
                       </bp:copy>
                     </bp:assign>
-                    <bp:invoke
-                      name="EvaluateLoanRisk"
-                      partnerLink="LoanRisk"
-                      operation="evaluate"
-                      portType="loanrisk:LoanRisk"
-                      inputVariable="loanRiskInput"
-                      outputVariable="loanRiskOutput" />
+
+                    <bp:invoke name="EvaluateLoanRisk" partnerLink="LoanRisk" operation="evaluate"
+                      portType="loanrisk:LoanRisk" inputVariable="loanRiskInput" outputVariable="loanRiskOutput" />
 
                     <!-- If the loan's risk is high, wait for the manager's decision -->
-                    <bp:if
-                      name="IsHighRisk">
-                      <bp:condition>
-                        $loanRiskOutput.response/loanrisk:highRisk =
-                        true()
-                    </bp:condition>
+                    <bp:if name="IsHighRisk">
+                      <bp:condition>$loanRiskOutput.response/loanrisk:highRisk = true()</bp:condition>
                       <bp:sequence>
-                        <bp:receive
-                          name="ReceiveManagerDecision"
-                          createInstance="no"
-                          partnerLink="LoanApproval"
-                          portType="loanapproval:LoanApproval"
-                          variable="managerDecision"
+                        <bp:receive name="ReceiveManagerDecision" createInstance="no"
+                          partnerLink="LoanApproval" portType="loanapproval:LoanApproval" variable="managerDecision"
                           operation="decidedByManager">
                           <bp:correlations>
-                            <bp:correlation
-                              set="loanId"
-                              initiate="no" />
+                            <bp:correlation set="loanId" initiate="no" />
                           </bp:correlations>
                         </bp:receive>
                       </bp:sequence>
                     </bp:if>
-                    <bp:if
-                      name="IsLoanGranted">
-                      <bp:condition>
-                        ($loanRiskOutput.response/loanrisk:highRisk =
-                        false())
-                        or ($managerDecision.request/loanapproval:granted
-                        =true())
+
+                    <bp:if name="IsLoanGranted">
+                      <bp:condition>($loanRiskOutput.response/loanrisk:highRisk = false()) or ($managerDecision.request/loanapproval:granted = true())
                       </bp:condition>
-                      <bp:sequence
-                        name="LoanGranted">
-                        <bp:assign
-                          name="PrepareLoanContract">
-                          <bp:copy
-                            ignoreMissingFromData="yes">
+                      <bp:sequence name="LoanGranted">
+                        <bp:assign name="PrepareLoanContract">
+                          <bp:copy ignoreMissingFromData="yes">
                             <bp:from>
                               <bp:literal>
-                                <p:LoanContractRequest
-                                  xmlns:p="urn:com:westbank:ws:business:LoanContract:2019:01"
-                                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                <p:LoanContractRequest xmlns:p="urn:com:westbank:ws:business:LoanContract:2019:01">
                                   <p:loanFileId />
-                                  <p:monthlyPayment><![CDATA[0]]></p:monthlyPayment>
                                   <p:staffId />
                                   <p:staffRole />
+                                  <p:agencyCode />
                                 </p:LoanContractRequest>
                               </bp:literal>
                             </bp:from>
-                            <bp:to
-                              variable="loanContractInput"
-                              part="request">
-                            </bp:to>
+                            <bp:to variable="loanContractInput" part="request" />
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$loanApprovalInput.request/loanapproval:loanFileId
-                            </bp:from>
-                            <bp:to>$loanContractInput.request/loancontract:loanFileId
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
+                            <bp:to>$loanContractInput.request/loancontract:loanFileId</bp:to>
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$bankInformationOutput.response/bankinformation:monthlyPayment
-                            </bp:from>
-                            <bp:to>$loanContractInput.request/loancontract:monthlyPayment
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$bankInformationOutput.response/bankinformation:monthlyPayment</bp:from>
+                            <bp:to>$loanContractInput.request/loancontract:monthlyPayment</bp:to>
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$staffIdentity.request/loanapproval:staffId
-                            </bp:from>
-                            <bp:to>$loanContractInput.request/loancontract:staffId
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$creditBrokerDecision.request/loanapproval:staffId</bp:from>
+                            <bp:to>$loanContractInput.request/loancontract:staffId</bp:to>
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$staffIdentity.request/loanapproval:staffRole
-                            </bp:from>
-                            <bp:to>$loanContractInput.request/loancontract:staffRole
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$creditBrokerDecision.request/loanapproval:staffRole</bp:from>
+                            <bp:to>$loanContractInput.request/loancontract:staffRole</bp:to>
+                          </bp:copy>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$loanApprovalInput.request/loanapproval:agencyCode</bp:from>
+                            <bp:to>$loanContractInput.request/loancontract:agencyCode</bp:to>
                           </bp:copy>
                         </bp:assign>
 
-                        <bp:invoke
-                          name="InitializeLoanContract"
-                          partnerLink="LoanContract"
-                          operation="create"
-                          portType="loancontract:LoanContract"
-                          inputVariable="loanContractInput"
+                        <bp:invoke name="InitializeLoanContract" partnerLink="LoanContract" operation="create"
+                          portType="loancontract:LoanContract" inputVariable="loanContractInput"
                           outputVariable="loanContractOutput" />
 
-                        <bp:receive
-                          name="ReceiveManagerSignature"
-                          createInstance="no"
-                          partnerLink="LoanApproval"
-                          portType="loanapproval:LoanApproval"
-                          variable="managerSignature"
+                        <bp:receive name="ReceiveManagerSignature" createInstance="no"
+                          partnerLink="LoanApproval" portType="loanapproval:LoanApproval" variable="managerSignature"
                           operation="signedByManager">
                           <bp:correlations>
-                            <bp:correlation
-                              set="loanId"
-                              initiate="no" />
+                            <bp:correlation set="loanId" initiate="no" />
                           </bp:correlations>
                         </bp:receive>
 
-                        <bp:assign
-                          name="PrepareSendingLoanContract">
-                          <bp:copy
-                            ignoreMissingFromData="yes">
+                        <bp:assign name="PrepareSendingLoanContract">
+                          <bp:copy ignoreMissingFromData="yes">
                             <bp:from>
                               <bp:literal>
-                                <p:CallbackLoanContractRequest
-                                  xmlns:p="urn:com:westbank:ws:client:CallbackLoanContract:2019:01">
-                                  <p:borrowerCustomerId />
+                                <p:CallbackLoanContractRequest xmlns:p="urn:com:westbank:ws:client:CallbackLoanContract:2019:01">
                                   <p:loanContractId />
+                                  <p:borrowerCustomerId />
                                 </p:CallbackLoanContractRequest>
                               </bp:literal>
                             </bp:from>
-                            <bp:to
-                              variable="callbackLoanContractInput"
-                              part="request">
-                            </bp:to>
+                            <bp:to variable="callbackLoanContractInput" part="request" />
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$loanContractOutput.response/loancontract:borrowerCustomerId
-                            </bp:from>
-                            <bp:to>$callbackLoanContractInput.request/callbackloancontract:borrowerCustomerId
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$loanApprovalInput.request/loanapproval:borrowerCustomerId</bp:from>
+                            <bp:to>$callbackLoanContractInput.request/callbackloancontract:borrowerCustomerId</bp:to>
                           </bp:copy>
-                          <bp:copy
-                            ignoreMissingFromData="yes">
-                            <bp:from>$loanContractOutput.response/loancontract:loanContractId
-                            </bp:from>
-                            <bp:to>$callbackLoanContractInput.request/callbackloancontract:loanContractId
-                            </bp:to>
+                          <bp:copy ignoreMissingFromData="yes">
+                            <bp:from>$loanContractOutput.response/loancontract:loanContractId</bp:from>
+                            <bp:to>$callbackLoanContractInput.request/callbackloancontract:loanContractId</bp:to>
                           </bp:copy>
                         </bp:assign>
 
-                        <bp:invoke
-                          name="SendLoanContract"
-                          partnerLink="CallbackLoanContract"
-                          operation="send"
-                          portType="callbackloancontract:CallbackLoanContract"
-                          inputVariable="callbackLoanContractInput" />
+                        <bp:invoke name="SendLoanContract" partnerLink="CallbackLoanContract" operation="send"
+                          portType="callbackloancontract:CallbackLoanContract" inputVariable="callbackLoanContractInput" />
 
-                        <bp:wait
-                          name="LegalDelayForThinking">
+                        <bp:wait name="LegalDelayForThinking">
                           <bp:for>'P0Y0M0DT0H0M5S'</bp:for>
                         </bp:wait>
 
-                        <bp:pick
-                          name="WaitForCustomerDecision">
-                          <bp:onMessage
-                            partnerLink="LoanApproval"
-                            operation="informedByCustomer"
-                            portType="loanapproval:LoanApproval"
-                            variable="customerDecision">
+                        <bp:pick name="WaitForCustomerDecision">
+                          <bp:onMessage partnerLink="LoanApproval" operation="informedByCustomer"
+                            portType="loanapproval:LoanApproval" variable="customerDecision">
                             <bp:correlations>
-                              <bp:correlation
-                                set="loanId"
-                                initiate="no" />
+                              <bp:correlation set="loanId" initiate="no" />
                             </bp:correlations>
-                            <bp:sequence
-                              name="GotCustomerDecision">
-                              <bp:if
-                                name="IsContractAccepted">
-                                <bp:condition>
-                                  $customerDecision.request/loanapproval:accepted
-                                  =
-                                  true()
-                              </bp:condition>
-                                <bp:sequence
-                                  name="ContractAccepted">
-                                  <bp:assign
-                                    name="PrepareLoanSettlement">
+                            <bp:sequence name="GotCustomerDecision">
+                              <bp:if name="IsContractAccepted">
+                                <bp:condition>$customerDecision.request/loanapproval:accepted = true()</bp:condition>
+                                <bp:sequence name="ContractAccepted">
+                                  <bp:assign name="PrepareLoanSettlement">
                                     <bp:copy>
                                       <bp:from>
                                         <bp:literal>
@@ -818,56 +716,38 @@
                                           </p:LoanSettlementRequest>
                                         </bp:literal>
                                       </bp:from>
-                                      <bp:to
-                                        variable="loanSettlementInput"
-                                        part="request">
-                                      </bp:to>
+                                      <bp:to variable="loanSettlementInput" part="request" />
                                     </bp:copy>
-                                    <bp:copy
-                                      ignoreMissingFromData="yes">
-                                      <bp:from>$loanContractOutput.response/loancontract:loanContractId
-                                      </bp:from>
-                                      <bp:to>$loanSettlementInput.request/loansettlement:loanContractId
-                                      </bp:to>
+                                    <bp:copy ignoreMissingFromData="yes">
+                                      <bp:from>$loanContractOutput.response/loancontract:loanContractId</bp:from>
+                                      <bp:to>$loanSettlementInput.request/loansettlement:loanContractId</bp:to>
                                     </bp:copy>
-                                    <bp:copy
-                                      ignoreMissingFromData="yes">
-                                      <bp:from>$staffIdentity.request/loanapproval:staffId
-                                      </bp:from>
-                                      <bp:to>$loanSettlementInput.request/loansettlement:staffId
-                                      </bp:to>
+                                    <!--
+                                    <bp:copy ignoreMissingFromData="yes">
+                                      <bp:from>$creditBrokerDecision.request/loanapproval:staffId</bp:from>
+                                      <bp:to>$loanSettlementInput.request/loansettlement:staffId</bp:to>
                                     </bp:copy>
-                                    <bp:copy
-                                      ignoreMissingFromData="yes">
-                                      <bp:from>$staffIdentity.request/loanapproval:staffRole
-                                      </bp:from>
-                                      <bp:to>$loanSettlementInput.request/loansettlement:staffRole
-                                      </bp:to>
+                                    <bp:copy ignoreMissingFromData="yes">
+                                      <bp:from>$creditBrokerDecision.request/loanapproval:staffRole</bp:from>
+                                      <bp:to>$loanSettlementInput.request/loansettlement:staffRole</bp:to>
                                     </bp:copy>
-                                    <bp:copy
-                                      ignoreMissingFromData="yes">
-                                      <bp:from>$loanApprovalInput.request/loanapproval:loanFileId
-                                      </bp:from>
-                                      <bp:to>$loanSettlementInput.request/loansettlement:loanFileId
-                                      </bp:to>
+                                    -->
+                                    <bp:copy ignoreMissingFromData="yes">
+                                      <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
+                                      <bp:to>$loanSettlementInput.request/loansettlement:loanFileId</bp:to>
                                     </bp:copy>
                                   </bp:assign>
-                                  <bp:invoke
-                                    name="PerformLoanSettlement"
-                                    partnerLink="LoanSettlement"
-                                    operation="start"
-                                    portType="loansettlement:LoanSettlement"
-                                    inputVariable="loanSettlementInput"
-                                    outputVariable="loanSettlementOutput" />
-                                  <bp:assign
-                                    name="PrepareSuccessfulNotification">
+
+                                  <bp:invoke name="PerformLoanSettlement" partnerLink="LoanSettlement"
+                                    operation="start" portType="loansettlement:LoanSettlement"
+                                    inputVariable="loanSettlementInput" outputVariable="loanSettlementOutput" />
+
+                                  <bp:assign name="PrepareSuccessfulNotification">
                                     <bp:copy>
                                       <bp:from>
                                         <bp:literal><![CDATA[GRANTED]]></bp:literal>
                                       </bp:from>
-                                      <bp:to>
-                                        $callbackLoanApprovalInput.request/callbackloanapproval:status
-                                      </bp:to>
+                                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                                     </bp:copy>
                                     <bp:copy>
                                       <bp:from>
@@ -876,33 +756,24 @@
                                       <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description
                                       </bp:to>
                                     </bp:copy>
-                                    <bp:copy
-                                      ignoreMissingFromData="yes">
-                                      <bp:from>$loanContractOutput.response/loancontract:loanContractId
-                                      </bp:from>
-                                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:contractId
-                                      </bp:to>
+                                    <bp:copy ignoreMissingFromData="yes">
+                                      <bp:from>$loanContractOutput.response/loancontract:loanContractId</bp:from>
+                                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:contractId</bp:to>
                                     </bp:copy>
                                   </bp:assign>
                                 </bp:sequence>
                                 <!-- Loan contract is canceled -->
                                 <bp:else>
-                                  <bp:sequence
-                                    name="ContractCanceled">
-                                    <bp:assign
-                                      name="ContractCanceledByCustomer">
+                                  <bp:sequence name="ContractCanceled">
+                                    <bp:assign name="ContractCanceledByCustomer">
                                       <bp:copy>
                                         <bp:from>
                                           <bp:literal><![CDATA[CANCELED]]></bp:literal>
                                         </bp:from>
-                                        <bp:to>
-                                          $callbackLoanApprovalInput.request/callbackloanapproval:status
-                                        </bp:to>
+                                        <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                                       </bp:copy>
-                                      <bp:copy
-                                        ignoreMissingFromData="yes">
-                                        <bp:from>$loanContractOutput.response/loancontract:loanContractId
-                                        </bp:from>
+                                      <bp:copy ignoreMissingFromData="yes">
+                                        <bp:from>$loanContractOutput.response/loancontract:loanContractId</bp:from>
                                         <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:contractId
                                         </bp:to>
                                       </bp:copy>
@@ -923,8 +794,7 @@
                           <bp:onAlarm>
                             <bp:for>'P0Y0M0DT0H0M30S'</bp:for>
                             <bp:sequence>
-                              <bp:assign
-                                name="PrepareLoanApprovalClosing">
+                              <bp:assign name="PrepareLoanApprovalClosing">
                                 <bp:copy>
                                   <bp:from>
                                     <bp:literal>
@@ -937,56 +807,38 @@
                                       </p:LoanApprovalClosingRequest>
                                     </bp:literal>
                                   </bp:from>
-                                  <bp:to
-                                    variable="loanApprovalClosingInput"
-                                    part="request">
-                                  </bp:to>
+                                  <bp:to variable="loanApprovalClosingInput" part="request" />
                                 </bp:copy>
-                                <bp:copy
-                                  ignoreMissingFromData="yes">
-                                  <bp:from>$loanApprovalInput.request/loanapproval:loanFileId
-                                  </bp:from>
-                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:loanFileId
-                                  </bp:to>
+                                <bp:copy ignoreMissingFromData="yes">
+                                  <bp:from>$loanApprovalInput.request/loanapproval:loanFileId</bp:from>
+                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:loanFileId</bp:to>
                                 </bp:copy>
-                                <bp:copy
-                                  ignoreMissingFromData="yes">
-                                  <bp:from>$loanContractOutput.response/loancontract:loanContractId
-                                  </bp:from>
-                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:loanContractId
-                                  </bp:to>
+                                <bp:copy ignoreMissingFromData="yes">
+                                  <bp:from>$loanContractOutput.response/loancontract:loanContractId</bp:from>
+                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:loanContractId</bp:to>
                                 </bp:copy>
-                                <bp:copy
-                                  ignoreMissingFromData="yes">
-                                  <bp:from>$staffIdentity.request/loanapproval:staffId
-                                  </bp:from>
-                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:staffId
-                                  </bp:to>
+                                <!--
+                                <bp:copy ignoreMissingFromData="yes">
+                                  <bp:from>$creditBrokerDecision.request/loanapproval:staffId</bp:from>
+                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:staffId</bp:to>
                                 </bp:copy>
-                                <bp:copy
-                                  ignoreMissingFromData="yes">
-                                  <bp:from>$staffIdentity.request/loanapproval:staffRole
-                                  </bp:from>
-                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:staffRole
-                                  </bp:to>
+                                <bp:copy ignoreMissingFromData="yes">
+                                  <bp:from>$creditBrokerDecision.request/loanapproval:staffRole</bp:from>
+                                  <bp:to>$loanApprovalClosingInput.request/loanapprovalclosing:staffRole</bp:to>
                                 </bp:copy>
+                                -->
                               </bp:assign>
-                              <bp:invoke
-                                name="CloseLoanApproval"
-                                partnerLink="LoanApprovalClosing"
-                                operation="close"
-                                portType="loanapprovalclosing:LoanApprovalClosing"
-                                inputVariable="loanApprovalClosingInput"
-                                outputVariable="loanApprovalClosingOutput" />
-                              <bp:assign
-                                name="CancelDueToTimeout">
+
+                              <bp:invoke name="CloseLoanApproval" partnerLink="LoanApprovalClosing"
+                                operation="close" portType="loanapprovalclosing:LoanApprovalClosing"
+                                inputVariable="loanApprovalClosingInput" outputVariable="loanApprovalClosingOutput" />
+
+                              <bp:assign name="CancelDueToTimeout">
                                 <bp:copy>
                                   <bp:from>
                                     <bp:literal><![CDATA[CANCELED]]></bp:literal>
                                   </bp:from>
-                                  <bp:to>
-                                    $callbackLoanApprovalInput.request/callbackloanapproval:status
-                                  </bp:to>
+                                  <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                                 </bp:copy>
                                 <bp:copy>
                                   <bp:from>
@@ -1002,22 +854,18 @@
                       </bp:sequence>
                       <bp:else>
                         <bp:sequence>
-                          <bp:assign
-                            name="DeclineDueToHighRisk">
+                          <bp:assign name="DeclineDueToHighRisk">
                             <bp:copy>
                               <bp:from>
                                 <bp:literal><![CDATA[REJECTED]]></bp:literal>
                               </bp:from>
-                              <bp:to>
-                                $callbackLoanApprovalInput.request/callbackloanapproval:status
-                              </bp:to>
+                              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                             </bp:copy>
                             <bp:copy>
                               <bp:from>
                                 <bp:literal><![CDATA[Decline due to high risk and unprofitable]]></bp:literal>
                               </bp:from>
-                              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description
-                              </bp:to>
+                              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description</bp:to>
                             </bp:copy>
                           </bp:assign>
                         </bp:sequence>
@@ -1028,22 +876,18 @@
               </bp:sequence>
               <bp:else>
                 <bp:sequence>
-                  <bp:assign
-                    name="DeclineDueToUnsatisfiedCondition">
+                  <bp:assign name="DeclineDueToUnsatisfiedCondition">
                     <bp:copy>
                       <bp:from>
                         <bp:literal><![CDATA[REJECTED]]></bp:literal>
                       </bp:from>
-                      <bp:to>
-                        $callbackLoanApprovalInput.request/callbackloanapproval:status
-                      </bp:to>
+                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                     </bp:copy>
                     <bp:copy>
                       <bp:from>
                         <bp:literal><![CDATA[Decline due to credit worthiness is not good]]></bp:literal>
                       </bp:from>
-                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description
-                      </bp:to>
+                      <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description</bp:to>
                     </bp:copy>
                   </bp:assign>
                 </bp:sequence>
@@ -1051,24 +895,19 @@
             </bp:if>
           </bp:sequence>
           <bp:else>
-            <bp:sequence
-              name="ConditionNotSatisfied">
-              <bp:assign
-                name="DeclineDueToUnsatisfiedCondition">
+            <bp:sequence name="ConditionNotSatisfied">
+              <bp:assign name="DeclineDueToUnsatisfiedCondition">
                 <bp:copy>
                   <bp:from>
                     <bp:literal><![CDATA[REJECTED]]></bp:literal>
                   </bp:from>
-                  <bp:to>
-                    $callbackLoanApprovalInput.request/callbackloanapproval:status
-                  </bp:to>
+                  <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
                 </bp:copy>
                 <bp:copy>
                   <bp:from>
                     <bp:literal><![CDATA[Decline due to unsatisfied payment condition]]></bp:literal>
                   </bp:from>
-                  <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description
-                  </bp:to>
+                  <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description</bp:to>
                 </bp:copy>
               </bp:assign>
             </bp:sequence>
@@ -1076,35 +915,27 @@
         </bp:if> <!-- If conditions are satisfied  -->
       </bp:sequence>
       <bp:else>
-        <bp:sequence
-          name="SuspendedPrivilege">
-          <bp:assign
-            name="DeclineDueToSuspendedPrivilege">
+        <bp:sequence name="SuspendedPrivilege">
+          <bp:assign name="DeclineDueToSuspendedPrivilege">
             <bp:copy>
               <bp:from>
                 <bp:literal><![CDATA[REJECTED]]></bp:literal>
               </bp:from>
-              <bp:to>
-                $callbackLoanApprovalInput.request/callbackloanapproval:status
-              </bp:to>
+              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:status</bp:to>
             </bp:copy>
             <bp:copy>
               <bp:from>
                 <bp:literal><![CDATA[Decline due to suspended banking privilege]]></bp:literal>
               </bp:from>
-              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description
-              </bp:to>
+              <bp:to>$callbackLoanApprovalInput.request/callbackloanapproval:description</bp:to>
             </bp:copy>
           </bp:assign>
         </bp:sequence>
       </bp:else>
     </bp:if> <!-- If banking privilege is not suspended -->
-    <bp:invoke
-      name="NotifyCustomer"
-      partnerLink="CallbackLoanApproval"
-      operation="notify"
-      portType="callbackloanapproval:CallbackLoanApproval"
-      inputVariable="callbackLoanApprovalInput" />
+
+    <bp:invoke name="NotifyCustomer" partnerLink="CallbackLoanApproval" operation="notify"
+      portType="callbackloanapproval:CallbackLoanApproval" inputVariable="callbackLoanApprovalInput" />
   </bp:sequence>
 </bp:process>
 

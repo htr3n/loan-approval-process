@@ -17,7 +17,7 @@
                         <xsd:element name="loanAmount" type="xsd:double"/>
                         <xsd:element name="loanTerm" type="xsd:int"/>
                         <xsd:element name="interestRate" type="xsd:double"/>
-                        <xsd:element name="staffId" type="xsd:long"/>
+                        <xsd:element name="staffId" type="xsd:string"/>
                         <xsd:element name="staffRole" type="xsd:string"/>
                     </xsd:sequence>
                 </xsd:complexType>
@@ -65,7 +65,7 @@
 
     <wsdl:service name="BankInformation">
         <wsdl:port name="BankInformationPort" binding="tns:BankInformationSOAP">
-            <soap:address location="http://localhost:9999/portal/services/BankInformation"/>
+            <soap:address location="http://localhost:9999/services/BankInformation"/>
         </wsdl:port>
     </wsdl:service>
 

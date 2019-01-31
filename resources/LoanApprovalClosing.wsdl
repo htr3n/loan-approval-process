@@ -13,7 +13,7 @@
             <xsd:element name="LoanApprovalClosingRequest">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="loanFileId" type="xsd:long"/>
+                        <xsd:element name="loanFileId" type="xsd:string"/>
                         <xsd:element name="loanContractId" type="xsd:long"/>
                         <xsd:element name="id" type="xsd:string"/>
                         <xsd:element name="staffRole" type="xsd:string"/>
@@ -59,7 +59,7 @@
 
     <wsdl:service name="LoanApprovalClosing">
         <wsdl:port name="LoanApprovalClosingPort" binding="tns:LoanApprovalClosingSOAP">
-            <soap:address location="http://localhost:9999/portal/services/LoanApprovalClosing"/>
+            <soap:address location="http://localhost:9999/services/LoanApprovalClosing"/>
         </wsdl:port>
     </wsdl:service>
 

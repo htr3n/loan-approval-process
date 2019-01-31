@@ -45,7 +45,7 @@
 
     <wsdl:service name="CallbackLoanContract">
         <wsdl:port name="CallbackLoanContractPort" binding="tns:CallbackLoanContractSOAP">
-            <soap:address location="http://localhost:9999/portal/services/CallbackLoanContract"/>
+            <soap:address location="http://localhost:9999/services/CallbackLoanContract"/>
         </wsdl:port>
     </wsdl:service>
 
